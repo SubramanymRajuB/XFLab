@@ -5,3 +5,4 @@ Customrenderers: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fund
 Effects:https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/effects/introduction
 ImageEntry: https://xamgirl.com/image-entry-in-xamarin-forms/
 DependencyService:https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/
+Styles: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/
