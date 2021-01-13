@@ -24,6 +24,8 @@
     <Folder Include="PageNavigations\" />
     <Folder Include="PlatformSpecific\" />
     <Folder Include="HELP\" />
+    <Folder Include="StylesDemo\" />
+    <Folder Include="Assets\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -34,5 +36,10 @@
     <EmbeddedResource Include="Images\Banana.jpg" />
     <EmbeddedResource Include="Images\FacePalm.jpg" />
     <EmbeddedResource Include="Images\SeatedMonkey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="StylesDemo\StylesListPage.xaml.cs">
+      <DependentUpon>StylesListPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

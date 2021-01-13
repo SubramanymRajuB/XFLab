@@ -1,5 +1,6 @@
 ﻿using System;
 using FormsGallery;
+using Styles;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XFLab.Intro;
@@ -27,7 +28,10 @@ namespace XFLab
             //MainPage = new NavigationPage(new EntryRendererPage());
 
             //DependencyService demo
-            MainPage = new NavigationPage(new DPPage());
+            //MainPage = new NavigationPage(new DPPage());
+
+            //Styles demo
+            MainPage = new NavigationPage(new StylesListPage());
         }
 
         //Called when the application starts.
