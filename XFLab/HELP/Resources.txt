@@ -1,0 +1,7 @@
+﻿Essential Xaml Syntax: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/xaml-basics/
+PLC(Pages, Layouts, Controls):https://github.com/xamarin/xamarin-forms-samples/tree/master/FormsGallery
+Page Navigations: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/navigation/
+Customrenderers: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/
+Effects:https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/effects/introduction
+ImageEntry: https://xamgirl.com/image-entry-in-xamarin-forms/
+DependencyService:https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/
