@@ -14,6 +14,7 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.1874" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.1874" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Intro\" />
@@ -26,6 +27,7 @@
     <Folder Include="HELP\" />
     <Folder Include="StylesDemo\" />
     <Folder Include="Assets\" />
+    <Folder Include="DataBindingDemos\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />

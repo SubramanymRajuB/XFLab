@@ -132,6 +132,9 @@
     <PackageReference Include="Xamarin.Forms.Maps">
       <Version>5.0.0.1874</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.CommunityToolkit">
+      <Version>1.0.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -148,5 +151,7 @@
     <BundleResource Include="Resources\email.png" />
     <BundleResource Include="Resources\password.png" />
     <BundleResource Include="Resources\user.png" />
+    <BundleResource Include="Resources\collapse.png" />
+    <BundleResource Include="Resources\expand.png" />
   </ItemGroup>
 </Project>

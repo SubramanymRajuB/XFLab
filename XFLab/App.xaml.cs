@@ -1,4 +1,5 @@
 ﻿using System;
+using DataBindingDemos;
 using FormsGallery;
 using Styles;
 using Xamarin.Forms;
@@ -11,9 +12,11 @@ namespace XFLab
 {
     public partial class App : Application
     {
+        public SampleSettingsViewModel Settings { get; private set; }
         public App()
         {
             InitializeComponent();
+            Settings = new SampleSettingsViewModel(Current.Properties);
 
             //Xaml vs Csharp DEMO
             //MainPage = new NavigationPage(new XamlCsharp());
@@ -32,6 +35,9 @@ namespace XFLab
 
             //Styles demo
             MainPage = new NavigationPage(new StylesListPage());
+
+            //Databinding demo
+            MainPage = new NavigationPage(new MainPage());
         }
 
         //Called when the application starts.
