@@ -153,5 +153,10 @@
     <BundleResource Include="Resources\user.png" />
     <BundleResource Include="Resources\collapse.png" />
     <BundleResource Include="Resources\expand.png" />
+    <BundleResource Include="Resources\lettuce.png" />
+    <BundleResource Include="Resources\tomato.png" />
+    <BundleResource Include="Resources\zucchini.png" />
+    <BundleResource Include="Resources\bulb.png" />
+    <BundleResource Include="Resources\monkey.jpg" />
   </ItemGroup>
 </Project>

@@ -37,7 +37,10 @@ namespace XFLab
             MainPage = new NavigationPage(new StylesListPage());
 
             //Databinding demo
-            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new DatabindingDemo());
+
+            //ListView demo
+            MainPage = new NavigationPage(new ListViewDemoPage());
         }
 
         //Called when the application starts.

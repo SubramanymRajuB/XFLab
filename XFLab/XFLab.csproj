@@ -28,6 +28,7 @@
     <Folder Include="StylesDemo\" />
     <Folder Include="Assets\" />
     <Folder Include="DataBindingDemos\" />
+    <Folder Include="ListAndCollectionViewDemos\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -42,6 +43,15 @@
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="StylesDemo\StylesListPage.xaml.cs">
       <DependentUpon>StylesListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="ListAndCollectionViewDemos\BuiltInCell.xaml.cs">
+      <DependentUpon>BuiltInCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="ListAndCollectionViewDemos\CustomCell.xaml.cs">
+      <DependentUpon>CustomCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ListAndCollectionViewDemos\ListViewDemoPage.xaml.cs">
+      <DependentUpon>ListViewDemoPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

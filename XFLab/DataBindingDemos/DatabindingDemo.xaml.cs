@@ -2,13 +2,13 @@
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace DataBindingDemos
+namespace XFLab
 {
-    public partial class MainPage : ContentPage
+    public partial class DatabindingDemo : ContentPage
     {
         public ICommand NavigateCommand { get; private set; }
 
-        public MainPage()
+        public DatabindingDemo()
         {
             InitializeComponent();
 
