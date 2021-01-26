@@ -38,9 +38,18 @@ namespace XFLab.Intro
             base.OnAppearing();
         }
 
+        bool isBackAllow = true;
         protected override bool OnBackButtonPressed()
         {
-            return base.OnBackButtonPressed();
+            if (!isBackAllow)
+            {
+                return true;
+            }
+            else
+            {
+                base.OnBackButtonPressed();
+                return false;
+            }
         }
 
         void Button_Clicked(System.Object sender, System.EventArgs e)

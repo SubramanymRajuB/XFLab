@@ -20,7 +20,7 @@ namespace XFLab
             Settings = new SampleSettingsViewModel(Current.Properties);
 
             //Xaml vs Csharp DEMO
-            //MainPage = new NavigationPage(new XamlCsharp());
+            MainPage = new NavigationPage(new XamlCsharp());
 
             //PLC DEMO (Pages, Layouts, Controls)
             //MainPage = new NavigationPage(new PLCPage());
@@ -44,7 +44,7 @@ namespace XFLab
             //MainPage = new NavigationPage(new ListViewDemoPage());
 
             //CollectionView demo
-            MainPage = new NavigationPage(new CollectionViewDemo());
+            //MainPage = new NavigationPage(new CollectionViewDemo());
         }
 
         //Called when the application starts.
