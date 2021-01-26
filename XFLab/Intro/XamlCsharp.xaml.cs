@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace XFLab.Intro
+namespace XFLab.Views
 {
     public partial class XamlCsharp : ContentPage
     {
@@ -16,6 +16,7 @@ namespace XFLab.Intro
             stck.Margin = new Thickness(20);
             stck.VerticalOptions = LayoutOptions.Center;
             //this.Content = stck;
+            //this.Title = "XAML vs C#";
 
             //Create Entry
             //entry = new Entry();

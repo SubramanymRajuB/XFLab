@@ -29,6 +29,7 @@
     <Folder Include="Assets\" />
     <Folder Include="DataBindingDemos\" />
     <Folder Include="CollectionView\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />

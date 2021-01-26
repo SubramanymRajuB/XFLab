@@ -7,7 +7,7 @@ using Xamarin.Forms.Platform.Android;
 using XFLab.Droid.Renderers;
 using XFLab.PlatformSpecific;
 
-[assembly: ExportRenderer(typeof(MyEntry), typeof(MyEntryRenderer))]
+[assembly: ExportRenderer(typeof(Entry), typeof(MyEntryRenderer))]
 namespace XFLab.Droid.Renderers
 {
     class MyEntryRenderer : EntryRenderer

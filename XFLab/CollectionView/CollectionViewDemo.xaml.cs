@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using CollectionViewDemos.Views;
+﻿using CollectionViewDemos.Views;
 using Xamarin.Forms;
+using XFLab.CollectionView;
 
-namespace XFLab.CollectionView
+namespace XFLab.Views
 {
     public partial class CollectionViewDemo : ContentPage
     {

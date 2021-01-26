@@ -2,9 +2,9 @@
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace FormsGallery
+namespace XFLab.Views
 {
-    public partial class PLCPage : TabbedPage
+    public partial class PLCPage : ContentPage
     {
         public PLCPage()
         {

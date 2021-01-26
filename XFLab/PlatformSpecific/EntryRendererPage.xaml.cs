@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace XFLab.PlatformSpecific
+namespace XFLab.Views
 {
     public partial class EntryRendererPage : ContentPage
     {

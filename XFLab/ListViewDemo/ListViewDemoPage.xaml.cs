@@ -1,7 +1,7 @@
 ﻿using ListAndCollectionViewDemos;
 using Xamarin.Forms;
 
-namespace XFLab
+namespace XFLab.Views
 {
     public partial class ListViewDemoPage : ContentPage
     {

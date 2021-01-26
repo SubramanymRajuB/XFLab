@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             x:Class="XFLab.Views.WelcomePage">
+    <StackLayout VerticalOptions="Start" BackgroundColor="White" Padding="10" Spacing="10">
+        <Button Text="Xaml vs Csharp"
+                HorizontalOptions="FillAndExpand"
+                FontSize="25" BackgroundColor="#2880b9"
+                TextColor="White" BorderColor="Transparent"
+                Clicked="XamlCsharpDemo_Clicked"/>
+
+        <Button Text="PLC (Pages, Layouts, Controls)"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="PLCDemo_Clicked"/>
+
+        <Button Text="Custom Renderers"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="CustomRendererDemo_Clicked"/>
+
+        <Button Text="Dependency Service"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="DependencyServiceDemo_Clicked"/>
+
+        <Button Text="Styles"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="StylesDemo_Clicked"/>
+
+        <Button Text="Data Binding"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="DataBindingDemo_Clicked"/>
+
+        <Button Text="ListView"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="ListViewDemo_Clicked"/>
+
+        <Button Text="CollectionView"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="CollectionViewDemo_Clicked"/>
+    </StackLayout>
+</ContentPage>

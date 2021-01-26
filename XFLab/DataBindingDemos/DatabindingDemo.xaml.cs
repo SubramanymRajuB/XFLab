@@ -2,7 +2,7 @@
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace XFLab
+namespace XFLab.Views
 {
     public partial class DatabindingDemo : ContentPage
     {

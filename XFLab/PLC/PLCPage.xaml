@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:FormsGallery"
-            x:Class="FormsGallery.PLCPage"
-            Title="Forms Gallery">
-
-    <ContentPage Title="XAML Pages">
+            x:Class="XFLab.Views.PLCPage"
+            Title="PLC (Pages, Layouts, Controls)">
         <TableView Intent="Menu">
             <TableRoot>
-                <TableSection Title="Views for Presentation">
+                 <TableSection Title="Views for Presentation" TextColor="Black">
 
                     <TextCell Text="BoxView"
                               Detail="Display a colored rectangle"
@@ -71,7 +69,7 @@
                               CommandParameter="{x:Type local:XamlExamples.WebViewDemoPage}" />
                 </TableSection>
 
-                <TableSection Title="Views that Initiate Commands">
+                 <TableSection TextColor="Black" Title="Views that Initiate Commands">
 
                     <TextCell Text="Button"
                               Detail="Initiate a command"
@@ -104,7 +102,7 @@
                               CommandParameter="{x:Type local:XamlExamples.SwipeViewDemoPage}" />
                 </TableSection>
 
-                <TableSection Title="Views for Setting Values">
+                 <TableSection TextColor="Black" Title="Views for Setting Values">
 
                     <TextCell Text="CheckBox (bool)"
                               Detail="Select a Boolean value"
@@ -137,7 +135,7 @@
                               CommandParameter="{x:Type local:XamlExamples.TimePickerDemoPage}" />
                 </TableSection>
 
-                <TableSection Title="Views for Editing Text">
+                 <TableSection TextColor="Black" Title="Views for Editing Text">
 
                     <TextCell Text="Entry (single line)"
                               Detail="Edit a single line of text"
@@ -150,7 +148,7 @@
                               CommandParameter="{x:Type local:XamlExamples.EditorDemoPage}" />
                 </TableSection>
 
-                <TableSection Title="Views to Indicate Activity">
+                 <TableSection TextColor="Black" Title="Views to Indicate Activity">
 
                     <TextCell Text="ActivityIndicator"
                               Detail="Show that the program is busy"
@@ -163,7 +161,7 @@
                               CommandParameter="{x:Type local:XamlExamples.ProgressBarDemoPage}" />
                 </TableSection>
 
-                <TableSection Title="Views that Display Collections">
+                 <TableSection TextColor="Black" Title="Views that Display Collections">
 
                     <TextCell Text="CarouselView"
                               Detail="Present data in a carousel layout"
@@ -201,7 +199,7 @@
                               CommandParameter="{x:Type local:XamlExamples.TableViewFormDemoPage}" />
                 </TableSection>
 
-                <TableSection Title="Cells">
+                 <TableSection TextColor="Black" Title="Cells">
 
                     <TextCell Text="TextCell"
                               Detail="Display text in a ListView or TableView"
@@ -225,7 +223,7 @@
                 </TableSection>
 
 
-                <TableSection Title="Layouts with Single Content">
+                 <TableSection TextColor="Black" Title="Layouts with Single Content">
 
                     <TextCell Text="ContentView"
                               Detail="Host a single child"
@@ -243,7 +241,7 @@
                               CommandParameter="{x:Type local:XamlExamples.ScrollViewDemoPage}" />
                 </TableSection>
 
-                <TableSection Title="Layouts with Multiple Children">
+                 <TableSection TextColor="Black" Title="Layouts with Multiple Children">
 
                     <TextCell Text="StackLayout"
                               Detail="Arrange children in a stack"
@@ -271,7 +269,7 @@
                               CommandParameter="{x:Type local:XamlExamples.FlexLayoutDemoPage}" />
                 </TableSection>
 
-                <TableSection Title="Pages">
+                 <TableSection TextColor="Black" Title="Pages">
 
                     <TextCell Text="ContentPage"
                               Detail="Present a normal page"
@@ -300,5 +298,4 @@
                 </TableSection>
             </TableRoot>
         </TableView>
-    </ContentPage>
-</TabbedPage>
+</ContentPage>

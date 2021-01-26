@@ -1,13 +1,6 @@
-﻿using System;
-using DataBindingDemos;
-using FormsGallery;
-using Styles;
+﻿using DataBindingDemos;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using XFLab.CollectionView;
-using XFLab.Intro;
-using XFLab.PageNavigations;
-using XFLab.PlatformSpecific;
+using XFLab.Views;
 
 namespace XFLab
 {
@@ -19,8 +12,12 @@ namespace XFLab
             InitializeComponent();
             Settings = new SampleSettingsViewModel(Current.Properties);
 
+            //WelcomePage
+            MainPage = new NavigationPage(new WelcomePage()) { BarBackgroundColor = Color.FromHex("#2880b9"),
+                BarTextColor = Color.White };
+
             //Xaml vs Csharp DEMO
-            MainPage = new NavigationPage(new XamlCsharp());
+            //MainPage = new NavigationPage(new XamlCsharp());
 
             //PLC DEMO (Pages, Layouts, Controls)
             //MainPage = new NavigationPage(new PLCPage());

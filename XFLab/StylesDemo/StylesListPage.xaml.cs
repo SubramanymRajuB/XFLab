@@ -2,7 +2,7 @@
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace Styles
+namespace XFLab.Views
 {
 	public partial class StylesListPage : ContentPage
 	{

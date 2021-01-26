@@ -66,8 +66,7 @@
         <CollectionView x:Name="collectionView" ItemsSource="{Binding Monkeys}"
                         SelectionMode="Single"
                         ItemSizingStrategy="MeasureFirstItem"
-                        SelectedItem="{Binding SelectedMonkey}"
-                        ItemsLayout="VerticalGrid, 2" >
+                        SelectedItem="{Binding SelectedMonkey}" >
              <!--<CollectionView.HeaderTemplate>
                 <DataTemplate>
                     <StackLayout Padding="20" BackgroundColor="LightGray">

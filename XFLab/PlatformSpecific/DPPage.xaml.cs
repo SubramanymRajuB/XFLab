@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 
 using Xamarin.Forms;
+using XFLab.PlatformSpecific;
 
-namespace XFLab.PlatformSpecific
+namespace XFLab.Views
 {
     public partial class DPPage : ContentPage
     {

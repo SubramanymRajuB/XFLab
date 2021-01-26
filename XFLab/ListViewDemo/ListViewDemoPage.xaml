@@ -1,9 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage BackgroundColor="White" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFLab.ListViewDemoPage">
-    <StackLayout VerticalOptions="Center" Spacing="10" Margin="20">
-        <Button x:Name="BuiltinCell" Text="BuiltInCell" TextColor="Black" HorizontalOptions="FillAndExpand" Clicked="BuiltinCell_Clicked"/>
-        <Button x:Name="CustomCell" Text="CustomCell" TextColor="Black" HorizontalOptions="FillAndExpand" Clicked="CustomCell_Clicked" />
-        <Button x:Name="Grouping" Text="Grouping" TextColor="Black" HorizontalOptions="FillAndExpand" Clicked="Grouping_Clicked"/>
-        <Button x:Name="Interactivity" Text="Interactivity" TextColor="Black" HorizontalOptions="FillAndExpand" Clicked="Interactivity_Clicked" />
+<ContentPage BackgroundColor="White"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="ListView Demo"
+             x:Class="XFLab.Views.ListViewDemoPage">
+    <StackLayout VerticalOptions="Center" Padding="10" Spacing="10">
+        <Button x:Name="BuiltinCell" Text="BuiltInCell"
+                FontSize="25" BackgroundColor="#2880b9"
+                TextColor="White" BorderColor="Transparent"
+                HorizontalOptions="FillAndExpand"
+                Clicked="BuiltinCell_Clicked"/>
+        <Button x:Name="CustomCell" Text="CustomCell"
+                FontSize="25" BackgroundColor="#2880b9"
+                TextColor="White" BorderColor="Transparent"
+                HorizontalOptions="FillAndExpand"
+                Clicked="CustomCell_Clicked" />
+        <Button x:Name="Grouping" Text="Grouping"
+                FontSize="25" BackgroundColor="#2880b9"
+                TextColor="White" BorderColor="Transparent"
+                HorizontalOptions="FillAndExpand" Clicked="Grouping_Clicked"/>
+        <Button x:Name="Interactivity" Text="Interactivity"
+                FontSize="25" BackgroundColor="#2880b9"
+                TextColor="White" BorderColor="Transparent"
+                HorizontalOptions="FillAndExpand" Clicked="Interactivity_Clicked" />
     </StackLayout>
 </ContentPage>
