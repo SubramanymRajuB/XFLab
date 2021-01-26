@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using XFLab.Models;
 
 namespace XFLab.PageNavigations
 {

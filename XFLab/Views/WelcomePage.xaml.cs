@@ -19,6 +19,11 @@ namespace XFLab.Views
             Navigation.PushAsync(new PLCPage());
         }
 
+        void PassingData_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new PassDataPageOne());
+        }
+
         void CustomRendererDemo_Clicked(System.Object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new EntryRendererPage());

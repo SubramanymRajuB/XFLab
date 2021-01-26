@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using XFLab.Models;
+using XFLab.PageNavigations;
 
-namespace XFLab.PageNavigations
+namespace XFLab.Views
 {
     public partial class PassDataPageOne : ContentPage
     {

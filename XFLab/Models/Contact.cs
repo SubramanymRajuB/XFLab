@@ -1,5 +1,5 @@
 ﻿using System;
-namespace XFLab.PageNavigations
+namespace XFLab.Models
 {
     public class Contact
     {
