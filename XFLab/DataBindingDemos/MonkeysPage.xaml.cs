@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using XFLab.Models;
 
 namespace DataBindingDemos
 {

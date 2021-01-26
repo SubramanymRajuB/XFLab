@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using System.Windows.Input;
+using XFLab.Models;
 
 namespace FormsGallery.XamlExamples
 {

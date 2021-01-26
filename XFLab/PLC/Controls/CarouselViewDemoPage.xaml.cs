@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Xamarin.Forms;
+using XFLab.Models;
 
 namespace FormsGallery.XamlExamples
 {

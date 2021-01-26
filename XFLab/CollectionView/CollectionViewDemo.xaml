@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             Title="CollectionView Demo"
+             x:Class="XFLab.CollectionView.CollectionViewDemo">
+    <StackLayout VerticalOptions="Center" Padding="10" Spacing="10">
+        <Button Text="Layout Orientation"
+                HorizontalOptions="FillAndExpand"
+                FontSize="25" BackgroundColor="#2880b9"
+                TextColor="White" BorderColor="Transparent"
+                Clicked="BtnLayoutOrientation_Clicked"/>
+
+        <Button Text="TemplateSelector"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="BtnTemplateSelector_Clicked"/>
+
+        <Button Text="Grouping"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="BtnGrouping_Clicked"/>
+
+        <Button Text="Context Menu Items"
+                HorizontalOptions="FillAndExpand" FontSize="25"
+                BackgroundColor="#2880b9" TextColor="White"
+                BorderColor="Transparent"
+                Clicked="BtnContextMenu_Clicked"/>
+    </StackLayout>
+</ContentPage>

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using XFLab.Models;
 
 namespace DataBindingDemos
 {

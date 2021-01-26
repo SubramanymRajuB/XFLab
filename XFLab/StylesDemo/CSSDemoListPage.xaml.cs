@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 using MonkeyApp.ViewModels;
 using MonkeyApp.Models;
+using XFLab.Models;
 
 namespace Styles
 {

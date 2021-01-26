@@ -4,6 +4,7 @@ using FormsGallery;
 using Styles;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XFLab.CollectionView;
 using XFLab.Intro;
 using XFLab.PageNavigations;
 using XFLab.PlatformSpecific;
@@ -34,13 +35,16 @@ namespace XFLab
             //MainPage = new NavigationPage(new DPPage());
 
             //Styles demo
-            MainPage = new NavigationPage(new StylesListPage());
+            //MainPage = new NavigationPage(new StylesListPage());
 
             //Databinding demo
             //MainPage = new NavigationPage(new DatabindingDemo());
 
             //ListView demo
-            MainPage = new NavigationPage(new ListViewDemoPage());
+            //MainPage = new NavigationPage(new ListViewDemoPage());
+
+            //CollectionView demo
+            MainPage = new NavigationPage(new CollectionViewDemo());
         }
 
         //Called when the application starts.

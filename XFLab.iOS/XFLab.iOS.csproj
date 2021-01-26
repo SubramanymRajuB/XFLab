@@ -158,5 +158,6 @@
     <BundleResource Include="Resources\zucchini.png" />
     <BundleResource Include="Resources\bulb.png" />
     <BundleResource Include="Resources\monkey.jpg" />
+    <BundleResource Include="Resources\favorite.png" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MonkeyApp.Models;
+using XFLab.Models;
 
 namespace MonkeyApp.ViewModels
 {
