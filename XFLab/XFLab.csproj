@@ -17,7 +17,6 @@
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Intro\" />
     <Folder Include="PLC\" />
     <Folder Include="PLC\Controls\" />
     <Folder Include="PLC\Layouts\" />
@@ -48,9 +47,6 @@
     <Compile Remove="CollectionView\VerticalListPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="StylesDemo\StylesListPage.xaml.cs">
-      <DependentUpon>StylesListPage.xaml</DependentUpon>
-    </Compile>
     <Compile Update="CollectionView\SwipeContextItemsPage.xaml.cs">
       <DependentUpon>SwipeContextItemsPage.xaml</DependentUpon>
     </Compile>
