@@ -25,7 +25,7 @@
                FontAttributes="Bold"
                HorizontalTextAlignment="Center" />
 
-        <RelativeLayout Grid.Row="1" 
+        <RelativeLayout BackgroundColor="Aqua" Grid.Row="1" 
                         Margin="10">
             
             <!-- Many Constant settings are estimates based on the FontSize of the Label
@@ -81,7 +81,7 @@
                                                                      Property=Y,
                                                                      Constant=34}" />
             <!-- Four BoxView's -->
-            <BoxView Color="Red"
+            <BoxView x:Name="redBox" Color="Red" WidthRequest="200"
                      RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, 
                                                                        Constant=0}" 
                      RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, 
@@ -105,6 +105,20 @@
                      RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
                                                                        Property=Height, 
                                                                        Constant=-40}" />
+
+            <BoxView Color="Black"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,
+                                                                       ElementName=centerLabel, 
+                                                                       Property=Width, 
+                                                                       Constant=0}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
+                                                                       ElementName=centerLabel, 
+                                                                       Property=Y, 
+                                                                       Constant=0}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView,
+                                                                       ElementName=redBox, 
+                                                                       Property=Width, 
+                                                                       Constant=0}" />
         </RelativeLayout>
     </Grid>
 </ContentPage>

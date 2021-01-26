@@ -2,26 +2,35 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FormsGallery.XamlExamples.AbsoluteLayoutDemoPage"
+             BackgroundColor="White"
              Title="AbsoluteLayout Demo">
-    <StackLayout>
-        <Label Text="AbsoluteLayout"
-               FontSize="40"
-               FontAttributes="Bold"
-               HorizontalOptions="Center" />
+    <AbsoluteLayout BackgroundColor="White" Margin="20">
 
-        <AbsoluteLayout BackgroundColor="#CCCCFF"
-                        VerticalOptions="FillAndExpand">
-            
-            <!-- Create two Labels for animating. -->
-            <Label x:Name="text1" 
-                   Text="AbsoluteLayout"
-                   TextColor="Black"
-                   AbsoluteLayout.LayoutFlags="PositionProportional" />
-            
-            <Label x:Name="text2" 
-                   Text="AbsoluteLayout"
-                   TextColor="Black"
-                   AbsoluteLayout.LayoutFlags="PositionProportional" />
-        </AbsoluteLayout>
-    </StackLayout>
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="0, 10, 1, 10"
+                 AbsoluteLayout.LayoutFlags="None"/>
+        <BoxView Color="Yellow"
+                 AbsoluteLayout.LayoutBounds="0, 10, 1, 1"
+                 AbsoluteLayout.LayoutFlags="SizeProportional"/>
+        
+        <BoxView Color="Blue"
+                 AbsoluteLayout.LayoutBounds="0, 1, 100, 50"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="RosyBrown"
+                 AbsoluteLayout.LayoutBounds="1, 10, 100, 50"
+                 AbsoluteLayout.LayoutFlags="XProportional"/>
+
+        <BoxView Color="Silver"
+                 AbsoluteLayout.LayoutBounds="0, 10, 200, 5" />
+        <BoxView Color="Silver"
+                 AbsoluteLayout.LayoutBounds="0, 20, 200, 5" />
+        <BoxView Color="Silver"
+                 AbsoluteLayout.LayoutBounds="10, 0, 5, 65" />
+        <BoxView Color="Silver"
+                 AbsoluteLayout.LayoutBounds="20, 0, 5, 65" />
+        <Label Text="Stylish Header"
+               FontSize="24"
+               AbsoluteLayout.LayoutBounds="30, 25" />
+    </AbsoluteLayout>
 </ContentPage>
