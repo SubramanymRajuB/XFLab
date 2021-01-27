@@ -9,13 +9,16 @@ namespace FormsGallery
         {
             ;
         }
-        public NamedColor(string name, Color color)
+        public NamedColor(string name, Color color, string img)
         {
             Name = name;
             Color = color;
+            Image = img;
         }
 
         public string Name { set; get; }
+
+        public string Image { set; get; }
 
         public Color Color { set; get; }
 
