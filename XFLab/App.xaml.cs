@@ -13,8 +13,13 @@ namespace XFLab
             Settings = new SampleSettingsViewModel(Current.Properties);
 
             //WelcomePage
-            MainPage = new NavigationPage(new WelcomePage()) { BarBackgroundColor = Color.FromHex("#2880b9"),
-                BarTextColor = Color.White };
+
+
+            MainPage = new NavigationPage(new WelcomePage())
+            {
+                BarBackgroundColor = Color.FromHex("#2880b9"),
+                BarTextColor = Color.White
+            };
 
             //Xaml vs Csharp DEMO
             //MainPage = new NavigationPage(new XamlCsharp());

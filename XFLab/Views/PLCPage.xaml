@@ -291,6 +291,11 @@
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.TabbedPageDemoPage}" />
 
+                     <TextCell Text="TemplatedPage"
+                              Detail="Present a page with control template"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.TemplatePageDemo}" />
+
                     <TextCell Text="CarouselPage"
                               Detail="Present a horizontally scrollable page"
                               Command="{Binding NavigateCommand}"
