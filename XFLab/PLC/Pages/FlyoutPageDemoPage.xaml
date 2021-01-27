@@ -5,15 +5,13 @@
                   x:Class="FormsGallery.XamlExamples.FlyoutPageDemoPage"
                   Title="FlyoutPage Demo">
     <FlyoutPage.Flyout>
-        <ContentPage Title="Color List">
-            <StackLayout>
+        <ContentPage BackgroundColor="#ABCABC" IconImageSource="hamburger.png" Title="Test">
+            <StackLayout Spacing="5" HorizontalOptions="Start">
                 <Label Text="FlyoutPage"
                        FontSize="30"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Center" />
+                       FontAttributes="Bold" />
 
-                <ListView x:Name="listView"
-                          Margin="10, 0"
+                <ListView BackgroundColor="White" HorizontalOptions="FillAndExpand" x:Name="listView"
                           ItemTapped="OnListViewItemTapped">
                     <ListView.ItemsSource>
                         <x:Array Type="{x:Type local:NamedColor}">
@@ -41,7 +39,9 @@
     </FlyoutPage.Flyout>
 
     <FlyoutPage.Detail>
-        <ContentPage Title="{Binding Name}"
+        <NavigationPage BarBackgroundColor="Black" BarTextColor="White">
+            <x:Arguments>
+                <ContentPage Title="{Binding Name}" BackgroundColor="White"
                      BindingContext="{Binding Source={x:Reference listView},
                                               Path=SelectedItem}">
             <ContentPage.Resources>
@@ -80,5 +80,7 @@
                 </StackLayout>
             </StackLayout>
         </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
     </FlyoutPage.Detail>
 </FlyoutPage>

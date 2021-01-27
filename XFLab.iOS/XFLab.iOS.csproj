@@ -159,5 +159,7 @@
     <BundleResource Include="Resources\bulb.png" />
     <BundleResource Include="Resources\monkey.jpg" />
     <BundleResource Include="Resources\favorite.png" />
+    <BundleResource Include="Resources\hamburger.png" />
+    <BundleResource Include="Resources\hamburger%402x.png" />
   </ItemGroup>
 </Project>
