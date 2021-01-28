@@ -1,5 +1,6 @@
 ﻿Essential Xaml Syntax: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/xaml-basics/
 PLC(Pages, Layouts, Controls):https://github.com/xamarin/xamarin-forms-samples/tree/master/FormsGallery
+ContentPresenter: https://www.xamboy.com/2019/01/18/using-control-templates-in-xamarin-forms/
 TemplatedPage:https://www.xamarinhelp.com/xamarin-forms-page-templates/
 FlexLayout: https://askxammy.com/getting-started-with-flexlayout-properties-behavior/
 Page Navigations: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/navigation/

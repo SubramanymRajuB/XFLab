@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      Margin="5"
+      x:Class="FormsGallery.XamlExamples.TemplateOne">
+   <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+         <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+     <Label  Grid.Row="0" Font="Bold" HorizontalOptions="CenterAndExpand" FontSize="Large" Text="Template 1"/>
+     <ContentPresenter Grid.Row="1" />
+     <Slider Grid.Row="2" Maximum="40"  Minimum="20" Value="{TemplateBinding BindingContext.Size}" />
+     <Label HorizontalOptions="CenterAndExpand" FontSize="{TemplateBinding BindingContext.Size}" Grid.Row="3" Text="{TemplateBinding BindingContext.Message}"/>
+</Grid>

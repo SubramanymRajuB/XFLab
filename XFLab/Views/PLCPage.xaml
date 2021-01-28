@@ -239,6 +239,11 @@
                               Detail="Scroll an item too large for the page"
                               Command="{Binding NavigateCommand}"
                               CommandParameter="{x:Type local:XamlExamples.ScrollViewDemoPage}" />
+
+                     <TextCell Text="ContentPresenter"
+                              Detail="Layout manager for templated views"
+                              Command="{Binding NavigateCommand}"
+                              CommandParameter="{x:Type local:XamlExamples.ContentPresenterDemo}" />
                 </TableSection>
 
                  <TableSection TextColor="Black" Title="Layouts with Multiple Children">
