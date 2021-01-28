@@ -26,7 +26,7 @@
     <Folder Include="HELP\" />
     <Folder Include="StylesDemo\" />
     <Folder Include="Assets\" />
-    <Folder Include="DataBindingDemos\" />
+    <Folder Include="DataBindingAndMVVM\" />
     <Folder Include="CollectionViewDemo\" />
     <Folder Include="Views\" />
   </ItemGroup>
