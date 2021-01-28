@@ -72,6 +72,7 @@
     <Compile Include="PlatformSpecific\ImageEntryRenderer.cs" />
     <Compile Include="PlatformSpecific\MyEntryRenderer.cs" />
     <Compile Include="PlatformSpecific\DeviceOrientationService.cs" />
+    <Compile Include="PlatformSpecific\OpenGLViewSharedCode.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
