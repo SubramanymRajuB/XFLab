@@ -17,6 +17,14 @@ namespace FormsGallery
             FavoriteColor = favoriteColor;
         }
 
+        public Person(string name, int age)
+        {
+            Name = name;
+            Age = age;
+        }
+
+        public int Age { get; private set; }
+
         public string Name { set; get; }
 
         public DateTime Birthday { set; get; }

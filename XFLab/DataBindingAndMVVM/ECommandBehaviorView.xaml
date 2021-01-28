@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFLab.ViewModels"
+             xmlns:converter="clr-namespace:XFLab.DataBindingDemos"
+             xmlns:behaviors="clr-namespace:XFLab.Behaviors"
+             BackgroundColor="White"
+             x:Class="DataBindingDemos.ECommandBehaviorView">
+    <ContentPage.BindingContext>
+        <local:ECommandBehaviorViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Behaviors>  
+        <behaviors:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}"/>  
+        <behaviors:EventToCommandBehavior EventName="Disappearing" Command="{Binding DisappearingCommand}"/>  
+    </ContentPage.Behaviors>   
+    <StackLayout BackgroundColor="White">
+        <Label Text="Behaviors Demo" FontAttributes="Bold" HorizontalOptions="Center" />
+        <ListView BackgroundColor="AliceBlue" HorizontalOptions="Start" ItemsSource="{Binding People}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.Behaviors>
+                <behaviors:EventToCommandBehavior EventName="ItemSelected" Command="{Binding OutputAgeCommand}" Converter="{StaticResource SelectedItemConverter}" />
+            </ListView.Behaviors>
+        </ListView>
+        <Label Text="{Binding SelectedItemText}" />
+    </StackLayout>
+</ContentPage>

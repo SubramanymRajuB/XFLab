@@ -175,6 +175,11 @@
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:DecimalKeypadPage}" />
 
+                <TextCell Text="Event to Command Behavior"
+                          Detail="Associate commands with controls that were not designed to interact with commands"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:ECommandBehaviorView}" />
+
             </TableSection>
             
             <TableSection Title="Compiled Bindings">
