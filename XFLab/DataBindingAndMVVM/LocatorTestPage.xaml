@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:locator="clr-namespace:XFLab.ViewModels"
+             BackgroundColor="White"
+             Title="ViewModel Locator Demo"
+             locator:ViewModelLocalizator.AutoWireViewModel="True"
+             x:Class="XFLab.DataBindingAndMVVM.LocatorTestPage">
+   <StackLayout BackgroundColor="White" VerticalOptions="Center">
+       <Label Text="{Binding Status}" HorizontalOptions="Center"
+              FontAttributes="Bold" FontSize="25" TextColor="Black"/>
+   </StackLayout>
+</ContentPage>

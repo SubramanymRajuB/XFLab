@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DataBindingDemos"
              x:Class="XFLab.Views.DatabindingDemo"
-             Title="Data Binding Demos"
+             Title="Data Binding &amp; MVVM Demos"
+             xmlns:xflab="clr-namespace:XFLab.DataBindingAndMVVM"
              Padding="10">
     <TableView Intent="Menu">
         <TableRoot>
@@ -199,6 +200,16 @@
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:MixedBindingsPage}" />
                 
+            </TableSection>
+
+
+            <TableSection Title="ViewModel Locator">
+
+                <TextCell Text="Custom Locator"
+                          Detail="Manages view models and their association to views"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type xflab:LocatorTestPage}" />
+
             </TableSection>
         </TableRoot>
     </TableView>
