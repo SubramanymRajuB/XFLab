@@ -62,6 +62,12 @@
                     BackgroundColor="#2880b9" TextColor="White"
                     BorderColor="Transparent"
                     Clicked="CollectionViewDemo_Clicked"/>
+
+            <Button Text="Custom Control"
+                    HorizontalOptions="FillAndExpand" FontSize="25"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="CustomControlDemo_Clicked"/>
         </StackLayout>
   </ScrollView>
 </ContentPage>

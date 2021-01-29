@@ -53,5 +53,11 @@ namespace XFLab.Views
         {
             Navigation.PushAsync(new CollectionViewDemo());
         }
+
+        void CustomControlDemo_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new LoginPage());
+        }
+
     }
 }

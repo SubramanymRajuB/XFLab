@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />
+    <EmbeddedResource Remove="Views\SignUpDaniaPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\Banana.jpg" />
@@ -46,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="CollectionView\VerticalListPage.xaml.cs" />
+    <Compile Remove="Views\LoginDaniaPage.xaml.cs" />
+    <Compile Remove="Views\SignUpDaniaPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="CollectionView\SwipeContextItemsPage.xaml.cs">

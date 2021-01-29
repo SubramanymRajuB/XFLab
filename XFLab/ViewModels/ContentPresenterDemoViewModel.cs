@@ -4,7 +4,7 @@ using System.ComponentModel;
 
 namespace XFLab.ViewModels
 {
-    public class ContentPresenterDemoViewModel : INotifyPropertyChanged
+    public class ContentPresenterDemoViewModel
     {
         public double Size { get; set; } = 16;
         public int Value { get; set; } = 250;
@@ -27,7 +27,5 @@ namespace XFLab.ViewModels
             Name = "Test Name";
             Description = "Test Description";
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
