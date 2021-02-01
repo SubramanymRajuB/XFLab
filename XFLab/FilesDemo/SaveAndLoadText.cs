@@ -19,6 +19,8 @@ namespace XFLab
 			var output = new Label { Text = "" };
 			saveButton = new Button {Text = "Save"};
 
+			this.Title = "Write/Read Text";
+
 			saveButton.Clicked += (sender, e) => 
             {
 				loadButton.IsEnabled = saveButton.IsEnabled = false;

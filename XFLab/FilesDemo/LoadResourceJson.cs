@@ -23,6 +23,8 @@ namespace XFLab
 			}
 			#endregion
 
+			this.Title = "Load JSON";
+
 			var listView = new ListView();
             listView.ItemTemplate = new DataTemplate(() =>
             {

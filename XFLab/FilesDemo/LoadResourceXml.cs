@@ -23,6 +23,8 @@ namespace XFLab
 			}
 			#endregion
 
+			this.Title = "Load XML";
+
 			var listView = new ListView ();
             listView.ItemTemplate = new DataTemplate(() =>
             {

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 using Xamarin.Forms;
+using XFLab.FilesDemo;
 
 namespace XFLab.Views
 {
@@ -25,6 +24,11 @@ namespace XFLab.Views
         void JSON_Clicked(System.Object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new LoadResourceJson());
+        }
+
+        void PDF_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new PDFDetails());
         }
     }
 }

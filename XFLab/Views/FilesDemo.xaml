@@ -21,5 +21,11 @@
                     BackgroundColor="#2880b9" TextColor="White"
                     BorderColor="Transparent"
                     Clicked="JSON_Clicked"/>
+
+            <Button Text="Open PDF"
+                    HorizontalOptions="FillAndExpand" FontSize="25"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="PDF_Clicked"/>
         </StackLayout>
 </ContentPage>

@@ -40,6 +40,7 @@
     <None Remove="Images\SeatedMonkey.jpg" />
     <None Remove="FilesDemo\LibJsonResource.json" />
     <None Remove="FilesDemo\LibXmlResource.xml" />
+    <None Remove="FilesDemo\Xamarin.pdf" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />
@@ -51,6 +52,7 @@
     <EmbeddedResource Include="Images\SeatedMonkey.jpg" />
     <EmbeddedResource Include="FilesDemo\LibJsonResource.json" />
     <EmbeddedResource Include="FilesDemo\LibXmlResource.xml" />
+    <EmbeddedResource Include="FilesDemo\Xamarin.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="CollectionView\VerticalListPage.xaml.cs" />
@@ -61,5 +63,8 @@
     <Compile Update="CollectionView\SwipeContextItemsPage.xaml.cs">
       <DependentUpon>SwipeContextItemsPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="**/*" />
   </ItemGroup>
 </Project>
