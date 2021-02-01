@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFLab.Views.FilesDemo">
+    <StackLayout VerticalOptions="Start"
+                 BackgroundColor="White" Padding="5" Spacing="10">
+            <Button Text="Write/Read Text"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="WriteRead_Clicked"/>
+
+            <Button Text="Load local XML"
+                    HorizontalOptions="FillAndExpand" FontSize="25"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="XMLDemo_Clicked"/>
+
+            <Button Text="Load local JSON"
+                    HorizontalOptions="FillAndExpand" FontSize="25"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="JSON_Clicked"/>
+        </StackLayout>
+</ContentPage>

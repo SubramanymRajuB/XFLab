@@ -80,6 +80,12 @@
                     BackgroundColor="#2880b9" TextColor="White"
                     BorderColor="Transparent"
                     Clicked="BehaviorsDemo_Clicked"/>
+
+            <Button Text="Files Demo"
+                    HorizontalOptions="FillAndExpand" FontSize="25"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="FilesDemo_Clicked"/>
         </StackLayout>
   </ScrollView>
 </ContentPage>
