@@ -68,6 +68,12 @@
                     BackgroundColor="#2880b9" TextColor="White"
                     BorderColor="Transparent"
                     Clicked="CustomControlDemo_Clicked"/>
+
+            <Button Text="Triggers Demo"
+                    HorizontalOptions="FillAndExpand" FontSize="25"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="TriggersDemo_Clicked"/>
         </StackLayout>
   </ScrollView>
 </ContentPage>

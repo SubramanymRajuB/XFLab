@@ -59,5 +59,10 @@ namespace XFLab.Views
             Navigation.PushAsync(new LoginPage());
         }
 
+        void TriggersDemo_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new TiggersDemo());
+        }
+
     }
 }

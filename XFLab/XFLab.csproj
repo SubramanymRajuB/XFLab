@@ -30,6 +30,7 @@
     <Folder Include="CollectionViewDemo\" />
     <Folder Include="Views\" />
     <Folder Include="BehaviorsDemo\" />
+    <Folder Include="TriggersDemo\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />

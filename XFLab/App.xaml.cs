@@ -12,9 +12,11 @@ namespace XFLab
             InitializeComponent();
             Settings = new SampleSettingsViewModel(Current.Properties);
 
+
+            //Test
+            //MainPage = new NavigationPage(new TiggersDemo());
+
             //WelcomePage
-
-
             MainPage = new NavigationPage(new WelcomePage())
             {
                 BarBackgroundColor = Color.FromHex("#2880b9"),
