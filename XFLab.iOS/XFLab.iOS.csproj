@@ -73,6 +73,7 @@
     <Compile Include="PlatformSpecific\MyEntryRenderer.cs" />
     <Compile Include="PlatformSpecific\DeviceOrientationService.cs" />
     <Compile Include="PlatformSpecific\OpenGLViewSharedCode.cs" />
+    <Compile Include="PlatformSpecific\LabelShadowEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

@@ -64,5 +64,10 @@ namespace XFLab.Views
             Navigation.PushAsync(new TiggersDemo());
         }
 
+        void BehaviorsDemo_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new BehaviorsDemo());
+        }
+
     }
 }
