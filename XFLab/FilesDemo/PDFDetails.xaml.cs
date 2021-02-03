@@ -32,7 +32,8 @@ namespace XFLab.FilesDemo
             else
             {
                 gridLoader.IsVisible = true;
-                webViewPDF.Source = $"file:///android_asset/pdfjs/web/viewer.html?file={WebUtility.UrlEncode(localPath)}";
+                //webViewPDF.Source = $"file:///android_asset/pdfjs/web/viewer.html?file={"file:///" + WebUtility.UrlEncode(localPath)}";
+                webViewPDF.Source = $"file:///android_asset/pdfjs/web/viewer.html?file={localPath}";
                 webViewPDF.Navigated += webViewPDF_Navigated;
             }
         }
