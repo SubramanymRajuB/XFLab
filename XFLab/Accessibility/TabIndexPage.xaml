@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Tab Order"
+             x:Class="XFLab.Accessibility.TabIndexPage">
+    <Grid Margin="20" BackgroundColor="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" /> 
+        </Grid.RowDefinitions>
+        <Button x:Name="_tabIndexButton" Text="Descending TabIndex" Clicked="OnTabIndexChangedClicked" />
+        <Button Grid.Column="1" Text="All TabIndex = 0" Clicked="OnZeroTabIndexClicked" />
+        <Button Grid.Row="1" Text="Toggle IsTabStop" Clicked="OnToggleIsTabStopClicked" />
+        <Button Grid.Column="1" Grid.Row="1" Text="Alternating IsTapStop" Clicked="OnAlternatingIsTapStopClicked" />
+        <StackLayout x:Name="_stackLayout" Grid.ColumnSpan="2" Grid.Row="2">
+            <Button Text="Save" TabIndex="10" />
+            <DatePicker TabIndex="20"/>
+            <Editor BackgroundColor="White" TextColor="Black" Placeholder="Enter data" TabIndex="30"/>
+            <Entry Placeholder="Enter name" TabIndex="40"/>
+            <Picker BackgroundColor="White" TextColor="Black" Title="Select a monkey" TabIndex="50">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Baboon</x:String>
+                  <x:String>Capuchin Monkey</x:String>
+                  <x:String>Blue Monkey</x:String>
+                  <x:String>Squirrel Monkey</x:String>
+                  <x:String>Golden Lion Tamarin</x:String>
+                  <x:String>Howler Monkey</x:String>
+                  <x:String>Japanese Macaque</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+            <ProgressBar Progress=".5" TabIndex="60"/>
+            <SearchBar  BackgroundColor="White" TextColor="Black" AutomationProperties.Name="Enter search term" TabIndex="80"/>
+            <Slider TabIndex="70"/>
+            <Stepper TabIndex="90"/>
+            <Switch TabIndex="100"/>
+            <TimePicker BackgroundColor="White" TextColor="Black" TabIndex="110"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

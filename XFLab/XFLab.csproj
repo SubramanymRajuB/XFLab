@@ -33,6 +33,7 @@
     <Folder Include="BehaviorsDemo\" />
     <Folder Include="TriggersDemo\" />
     <Folder Include="FilesDemo\" />
+    <Folder Include="Accessibility\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -62,6 +63,9 @@
   <ItemGroup>
     <Compile Update="CollectionView\SwipeContextItemsPage.xaml.cs">
       <DependentUpon>SwipeContextItemsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AccessibilityDemo.xaml.cs">
+      <DependentUpon>AccessibilityDemo.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

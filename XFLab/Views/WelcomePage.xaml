@@ -86,6 +86,12 @@
                     BackgroundColor="#2880b9" TextColor="White"
                     BorderColor="Transparent"
                     Clicked="FilesDemo_Clicked"/>
+
+            <Button Text="Accessbility Demo"
+                    HorizontalOptions="FillAndExpand" FontSize="25"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="Accessbility_Clicked"/>
         </StackLayout>
   </ScrollView>
 </ContentPage>
