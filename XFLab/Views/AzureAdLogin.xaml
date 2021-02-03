@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             Title="Azure AD Login"
+             x:Class="XFLab.Views.AzureAdLogin">
+    <Grid>
+    <StackLayout VerticalOptions="Start" BackgroundColor="White" Padding="5" Spacing="10">
+            <Label x:Name="userName" TextColor="Black" TextDecorations="Underline" FontAttributes="Bold" FontSize="30" HorizontalOptions="Center"/>
+            <Button Text="Login"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Login_Clicked"/>
+            <Button Text="Singout"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Singout_Clicked"/>
+    </StackLayout>
+        <Grid x:Name="gridLoader" IsVisible="false" BackgroundColor="Transparent">
+        <Frame Padding="0" CornerRadius="15" HasShadow="false" VerticalOptions="Center" HorizontalOptions="Center"> 
+            <StackLayout Padding="40,10,40,10" >
+                <ActivityIndicator x:Name="activity"  
+                       IsRunning="true"  
+                       IsEnabled="False" 
+                       Color="Gray"
+                       BackgroundColor="Transparent"
+                       VerticalOptions="Center"/> 
+                     <Label x:Name="txtLoader" Text="Loading..." TextColor="#000000" FontSize="17" FontFamily="OpenSansRegular"/>  
+                </StackLayout>
+            </Frame>
+         </Grid>
+     </Grid>
+ </ContentPage>

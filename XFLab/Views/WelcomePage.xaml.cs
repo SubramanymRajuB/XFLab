@@ -74,6 +74,11 @@ namespace XFLab.Views
             Navigation.PushAsync(new FilesDemo());
         }
 
+        void MSAL_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new AzureAdLogin());
+        }
+
         void Accessbility_Clicked(System.Object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new AccessibilityDemo());

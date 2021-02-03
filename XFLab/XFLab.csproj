@@ -16,6 +16,7 @@
     <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.1874" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PLC\" />
@@ -34,6 +35,7 @@
     <Folder Include="TriggersDemo\" />
     <Folder Include="FilesDemo\" />
     <Folder Include="Accessibility\" />
+    <Folder Include="MSALDemo\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -42,6 +44,8 @@
     <None Remove="FilesDemo\LibJsonResource.json" />
     <None Remove="FilesDemo\LibXmlResource.xml" />
     <None Remove="FilesDemo\Xamarin.pdf" />
+    <None Remove="MSALDemo\AzureADAuthProvider.cs" />
+    <None Remove="MSALDemo\GraphUserDataService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />
@@ -70,5 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="**/*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\11.0.0.3\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v10.0\Mono.Android.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

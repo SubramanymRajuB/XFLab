@@ -6,6 +6,7 @@ namespace XFLab
 {
     public partial class App : Application
     {
+        public static object ParentWindow { get; set; }
         public SampleSettingsViewModel Settings { get; private set; }
         public App()
         {

@@ -10,6 +10,7 @@ using AndroidX.Core.Content;
 using Android;
 using AndroidX.Core.App;
 using Android.Content;
+using Microsoft.Identity.Client;
 
 namespace XFLab.Droid
 {
@@ -20,7 +21,7 @@ namespace XFLab.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
+            App.ParentWindow = this;
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
@@ -53,6 +54,13 @@ namespace XFLab.Droid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        // Get call back result of MSAL authentication
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+            AuthenticationContinuationHelper.SetAuthenticationContinuationEventArgs(requestCode, resultCode, data);
         }
     }
 }
