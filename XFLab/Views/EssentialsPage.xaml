@@ -24,6 +24,30 @@
                     HorizontalOptions="FillAndExpand"
                     FontSize="25" BackgroundColor="#2880b9"
                     TextColor="White" BorderColor="Transparent"
-                    Clicked="Permissions_Clicked"/>
+                    Clicked="Permissions_Clicked"/><Button Text="Connectvity"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Connectvity_Clicked"/>
+            <Button Text="Phone Dialer"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Dialer_Clicked"/>
+            <Button Text="Email"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Email_Clicked"/>
+            <Button Text="Launcher"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Launcher_Clicked"/>
+            <Button Text="File Picker"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="FilePicker_Clicked"/>
         </StackLayout>
 </ContentPage>

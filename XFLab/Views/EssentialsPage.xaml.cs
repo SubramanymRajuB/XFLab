@@ -28,5 +28,25 @@ namespace XFLab.Views
         {
             Navigation.PushAsync(new PermissionsPage());
         }
+
+        void Dialer_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new PhoneDialerPage());
+        }
+
+        void Email_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new EmailPage());
+        }
+
+        void Launcher_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new LauncherPage());
+        }
+
+        void FilePicker_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new FilePickerPage());
+        }
     }
 }
