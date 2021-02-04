@@ -8,7 +8,7 @@ namespace XFLab.ViewModels
         {
         }
 
-        public string NetworkAccess =>
+        public string NetworkStatus =>
             Connectivity.NetworkAccess.ToString();
 
         public string ConnectionProfiles
@@ -36,10 +36,20 @@ namespace XFLab.ViewModels
             base.OnDisappearing();
         }
 
-        void OnConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
+        async void OnConnectivityChanged(object sender, ConnectivityChangedEventArgs e)
         {
             OnPropertyChanged(nameof(ConnectionProfiles));
             OnPropertyChanged(nameof(NetworkAccess));
+
+            if(NetworkStatus != NetworkAccess.Internet.ToString())
+            {
+                await DisplayAlertAsync("No network is available.");
+            }
+            else
+            {
+                await DisplayAlertAsync(ConnectionProfiles +" Network is available.");
+            }
+
         }
     }
 }
