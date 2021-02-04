@@ -2,6 +2,7 @@
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using XFLab.Models;
+using Contact = XFLab.Models.Contact;
 
 namespace XFLab.PageNavigations
 {

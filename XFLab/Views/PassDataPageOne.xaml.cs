@@ -4,6 +4,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using XFLab.Models;
 using XFLab.PageNavigations;
+using Contact = XFLab.Models.Contact;
 
 namespace XFLab.Views
 {

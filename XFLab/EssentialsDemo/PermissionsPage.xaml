@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:BasePage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:views="clr-namespace:XFLab"
+             xmlns:viewmodels="clr-namespace:XFLab.ViewModels"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XFLab.PermissionsPage"
+             BackgroundColor="White"
+             Title="Permissions">
+
+    <views:BasePage.BindingContext>
+        <viewmodels:PermissionsViewModel x:Name="viewModel" />
+    </views:BasePage.BindingContext>
+
+    <StackLayout>
+        <ListView BackgroundColor="White" HasUnevenRows="True" ItemsSource="{Binding PermissionItems}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="8,0,8,0" RowSpacing="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <Label TextColor="Black" Text="{Binding Title}" FontAttributes="Bold" VerticalOptions="Center" Grid.Row="0" Grid.Column="0"/>
+                            <Label TextColor="Black" Text="{Binding Status, Mode=OneWay}" VerticalOptions="Center" Grid.Row="1" Grid.Column="0"/>
+                            <Label TextColor="Black" Text="{Binding Rationale, Mode=OneWay}" VerticalOptions="Center" Grid.Row="2" Grid.Column="0"/>
+
+                            <Button TextColor="Black" Text="Check" Command="{Binding CheckStatusCommand}" Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" VerticalOptions="Center" />
+                            <Button TextColor="Black" Text="Request" Command="{Binding RequestCommand}" Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" VerticalOptions="Center" />
+                            
+                            <Button TextColor="Black" Text="Show Rationale" Command="{Binding ShouldShowRationaleCommand}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalOptions="Center" />
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</views:BasePage>
