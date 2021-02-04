@@ -5,13 +5,13 @@
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<application android:label="XFLab.Android" android:theme="@style/MainTheme">
-        <activity android:name="microsoft.identity.client.BrowserTabActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="msalb1e54ab8-d830-4d4e-9490-7a2dc68f6a5f" android:host="auth" />
-            </intent-filter>
-        </activity>
-    </application>
+		<activity android:name="microsoft.identity.client.BrowserTabActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="msalb1e54ab8-d830-4d4e-9490-7a2dc68f6a5f" android:host="auth" />
+			</intent-filter>
+		</activity>
+	</application>
 </manifest>

@@ -36,6 +36,7 @@
     <Folder Include="FilesDemo\" />
     <Folder Include="Accessibility\" />
     <Folder Include="MSALDemo\" />
+    <Folder Include="EssentialsDemo\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />

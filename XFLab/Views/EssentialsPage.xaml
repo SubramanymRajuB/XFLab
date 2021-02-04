@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="XFLab.Views.EssentialsPage">
+    <StackLayout VerticalOptions="Start" BackgroundColor="White" Padding="5" Spacing="10">
+            <Label Text="Xamarin Essentials Demo's" TextColor="Black" TextDecorations="Underline" FontAttributes="Bold" FontSize="30" HorizontalOptions="Center"/>
+            <Button Text="Connectvity"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Connectvity_Clicked"/>
+        </StackLayout>
+</ContentPage>

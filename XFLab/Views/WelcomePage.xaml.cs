@@ -69,6 +69,11 @@ namespace XFLab.Views
             Navigation.PushAsync(new BehaviorsDemo());
         }
 
+        void EssentialsDemo_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new EssentialsPage());
+        }
+
         void FilesDemo_Clicked(System.Object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new FilesDemo());
