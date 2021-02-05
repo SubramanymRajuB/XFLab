@@ -49,5 +49,15 @@
                     FontSize="25" BackgroundColor="#2880b9"
                     TextColor="White" BorderColor="Transparent"
                     Clicked="FilePicker_Clicked"/>
+            <Button Text="Version Tracking"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="VersionTracking_Clicked"/>
+            <Button Text="Secure Storage"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="SecureStorage_Clicked"/>
         </StackLayout>
 </ContentPage>

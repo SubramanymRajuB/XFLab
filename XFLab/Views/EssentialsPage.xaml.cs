@@ -48,5 +48,15 @@ namespace XFLab.Views
         {
             Navigation.PushAsync(new FilePickerPage());
         }
+
+        void VersionTracking_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new VersionTrackingDemo());
+        }
+
+        void SecureStorage_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new SecureStoragePage());
+        }
     }
 }
