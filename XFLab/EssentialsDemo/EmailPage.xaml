@@ -3,6 +3,7 @@
                 xmlns:views="clr-namespace:XFLab"
                 xmlns:viewmodels="clr-namespace:XFLab.ViewModels"
                 x:Class="XFLab.EmailPage"
+                BackgroundColor="White"
                 Title="Email">
     <views:BasePage.BindingContext>
         <viewmodels:EmailViewModel />
@@ -12,46 +13,46 @@
         <ToolbarItem Text="Send" Command="{Binding SendEmailCommand}" IsEnabled="{Binding IsNotBusy}" />
     </views:BasePage.ToolbarItems>
 
-    <StackLayout>
-        <Label Text="Easily send email messages." FontAttributes="Bold" Margin="12" />
+    <StackLayout BackgroundColor="White">
+        <Label TextColor="Black" Text="Easily send email messages." FontAttributes="Bold" Margin="12" />
 
         <ScrollView>
             <StackLayout Padding="12,0,12,12" Spacing="6">
                 <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" />
 
-                <Button Text="Send Email" Command="{Binding SendEmailCommand}" IsEnabled="{Binding IsNotBusy}" />
+                <Button BackgroundColor="White" TextColor="Black" Text="Send Email" Command="{Binding SendEmailCommand}" IsEnabled="{Binding IsNotBusy}" />
 
-                <Label Text="Recipients" FontAttributes="Bold" Margin="0,6,0,0" />
-                <Label Text="To:" />
-                <Entry Text="{Binding RecipientsTo}" />
-                <Label Text="CC:" />
-                <Entry Text="{Binding RecipientsCc}" />
-                <Label Text="BCC:" />
-                <Entry Text="{Binding RecipientsBcc}" />
+                <Label TextColor="Black" Text="Recipients" FontAttributes="Bold" Margin="0,6,0,0" />
+                <Label TextColor="Black" Text="To:" />
+                <Entry BackgroundColor="White" TextColor="Black" Text="{Binding RecipientsTo}" />
+                <Label TextColor="Black" Text="CC:" />
+                <Entry BackgroundColor="White" TextColor="Black" Text="{Binding RecipientsCc}" />
+                <Label TextColor="Black" Text="BCC:" />
+                <Entry BackgroundColor="White" TextColor="Black" Text="{Binding RecipientsBcc}" />
 
-                <Label Text="Message" FontAttributes="Bold" Margin="0,6,0,0" />
-                <Label Text="Subject:" />
-                <Entry Text="{Binding Subject}" />
+                <Label TextColor="Black" Text="Message" FontAttributes="Bold" Margin="0,6,0,0" />
+                <Label TextColor="Black" Text="Subject:" />
+                <Entry BackgroundColor="White" TextColor="Black" Text="{Binding Subject}" />
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Is Html?" HorizontalTextAlignment="End"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                    <Label BackgroundColor="White" TextColor="Black" Text="Is Html?" HorizontalTextAlignment="End"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                     <Switch IsToggled="{Binding IsHtml}" VerticalOptions="Center"/>
                 </StackLayout>
-                <Label Text="Body:" />
-                <Editor Text="{Binding Body}" Keyboard="Chat" AutoSize="TextChanges" />
+                <Label BackgroundColor="White" TextColor="Black" Text="Body:" />
+                <Editor BackgroundColor="White" TextColor="Black" Text="{Binding Body}" Keyboard="Chat" AutoSize="TextChanges" />
 
-                <Label Text="Attachment" FontAttributes="Bold" Margin="0,6,0,0" />
+                <Label BackgroundColor="White" TextColor="Black" Text="Attachment" FontAttributes="Bold" Margin="0,6,0,0" />
 
-                <Label Text="File Name:" />
-                <Entry Text="{Binding AttachmentName}" />
-                <Label Text="File Contents:" />
-                <Editor Text="{Binding AttachmentContents}" Keyboard="Chat" AutoSize="TextChanges" />
+                <Label BackgroundColor="White" TextColor="Black" Text="File Name:" />
+                <Entry BackgroundColor="White" TextColor="Black" Text="{Binding AttachmentName}" />
+                <Label BackgroundColor="White" TextColor="Black" Text="File Contents:" />
+                <Editor BackgroundColor="White" TextColor="Black" Text="{Binding AttachmentContents}" Keyboard="Chat" AutoSize="TextChanges" />
 
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Attach Multiple" HorizontalTextAlignment="End"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                    <Label BackgroundColor="White" TextColor="Black" Text="Attach Multiple" HorizontalTextAlignment="End"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                     <Switch IsToggled="{Binding HasMultipleAttachements}" VerticalOptions="Center"/>
                 </StackLayout>
 
-                <Button Text="Send Email" Command="{Binding SendEmailCommand}" IsEnabled="{Binding IsNotBusy}" />
+                <Button BackgroundColor="White" TextColor="Black" Text="Send Email" Command="{Binding SendEmailCommand}" IsEnabled="{Binding IsNotBusy}" />
 
             </StackLayout>
         </ScrollView>

@@ -12,7 +12,14 @@ namespace XFLab.ViewModels
         string fileAttachmentName;
         string fileAttachmentContents;
 
-        public string LaunchUri { get; set; }
+        string url = "ms-outlook://compose?to=subbu.balaraju@gmail.com,revanth@gmail.com&subject=subject&body=body";
+        public string LaunchUri
+        {
+            get => url;
+            set {
+                url = value;
+            }
+        }
 
         public ICommand LaunchCommand { get; }
 
@@ -65,6 +72,13 @@ namespace XFLab.ViewModels
         async void OnLaunchMail()
         {
             await Launcher.OpenAsync("mailto:");
+            //gmailUrl = URL(string: "googlegmail://co?to=\(to)&subject=\(subjectEncoded)&body=\(bodyEncoded)")
+            //outlookUrl = URL(string: "ms-outlook://compose?to=\(to)&subject=\(subjectEncoded)")
+            //yahooMail = URL(string: "ymail://mail/compose?to=\(to)&subject=\(subjectEncoded)&body=\(bodyEncoded)")
+            //sparkUrl = URL(string: "readdle-spark://compose?recipient=\(to)&subject=\(subjectEncoded)&body=\(bodyEncoded)")
+            //defaultUrl = URL(string: "mailto:\(to)?subject=\(subjectEncoded)&body=\(bodyEncoded)")
+            //"mailto://to=subbu.balaraju@gmail.com,revanth@gmail.com&subject=subject&body=body
+            //await Launcher.OpenAsync("mailto://to=subbu.balaraju@gmail.com,revanth@gmail.com?subject=subject&body=body");
         }
 
         async void CanLaunch()

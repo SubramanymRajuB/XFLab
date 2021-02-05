@@ -8,16 +8,16 @@ using Xamarin.Forms.Platform.Android;
 using XFLab.Droid.Renderers;
 using XFLab.PlatformSpecific;
 
-[assembly: ExportRenderer(typeof(Entry), typeof(MyEntryRenderer))]
+[assembly: ExportRenderer(typeof(Editor), typeof(CustomEditorRenderer))]
 namespace XFLab.Droid.Renderers
 {
-    class MyEntryRenderer : EntryRenderer
+    class CustomEditorRenderer : EditorRenderer
     {
-        public MyEntryRenderer(Context context) : base(context)
+        public CustomEditorRenderer(Context context) : base(context)
         {
         }
 
-        protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<Editor> e)
         {
             base.OnElementChanged(e);
 
@@ -25,7 +25,7 @@ namespace XFLab.Droid.Renderers
             {
                 var nativeEditText = (global::Android.Widget.EditText)Control;
                 var shape = new ShapeDrawable(new Android.Graphics.Drawables.Shapes.RectShape());
-                shape.Paint.Color = Xamarin.Forms.Color.Red.ToAndroid();
+                shape.Paint.Color = Xamarin.Forms.Color.Blue.ToAndroid();
                 shape.Paint.SetStyle(Paint.Style.Stroke);
                 shape.Paint.StrokeWidth = 5;
                 nativeEditText.Background = shape;

@@ -5,7 +5,8 @@ using Xamarin.Forms.Platform.iOS;
 using XFLab.iOS.Renderers;
 using XFLab.PlatformSpecific;
 
-[assembly: ExportRenderer(typeof(MyEntry), typeof(MyEntryRenderer))]
+//[assembly: ExportRenderer(typeof(MyEntry), typeof(MyEntryRenderer))]
+[assembly: ExportRenderer(typeof(Entry), typeof(MyEntryRenderer))]
 namespace XFLab.iOS.Renderers
 {
 	public class MyEntryRenderer : EntryRenderer
@@ -17,7 +18,7 @@ namespace XFLab.iOS.Renderers
 			if (Control != null)
 			{
 				Control.BorderStyle = UITextBorderStyle.Line;
-				Control.Layer.BorderColor = UIColor.Red.CGColor;
+				Control.Layer.BorderColor = UIColor.Blue.CGColor;
 				Control.Layer.BorderWidth = 1;
 			}
 		}
