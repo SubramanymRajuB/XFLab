@@ -87,6 +87,12 @@
                     BorderColor="Transparent"
                     Clicked="EssentialsDemo_Clicked"/>
 
+            <Button Text="Third Party Library Demo"
+                    HorizontalOptions="FillAndExpand" FontSize="25"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="ThirdPartyDemo_Clicked"/>
+
             <Button Text="Files Demo"
                     HorizontalOptions="FillAndExpand" FontSize="25"
                     BackgroundColor="#2880b9" TextColor="White"

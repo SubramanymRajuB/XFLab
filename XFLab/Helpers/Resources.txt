@@ -9,3 +9,4 @@ Effects:https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/
 ImageEntry: https://xamgirl.com/image-entry-in-xamarin-forms/
 DependencyService:https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/
 Styles: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/
+Localization: https://xamgirl.com/multilingual-localization-plugin-for-xamarin/

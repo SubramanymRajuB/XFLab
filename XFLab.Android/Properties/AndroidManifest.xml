@@ -43,8 +43,7 @@
 			<action android:name="android.media.action.IMAGE_CAPTURE" />
 		</intent>
 	</queries>
-	<application android:label="XFLab.Android" android:theme="@style/MainTheme"
-                 android:fullBackupContent="@xml/my_backup_rules">
+	<application android:label="XFLab.Android" android:theme="@style/MainTheme" android:fullBackupContent="@xml/my_backup_rules">
 		<activity android:name="microsoft.identity.client.BrowserTabActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW" />

@@ -17,6 +17,7 @@
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="Microsoft.Identity.Client" Version="4.3.0" />
+    <PackageReference Include="Plugin.Multilingual" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PLC\" />
@@ -25,7 +26,7 @@
     <Folder Include="PLC\Pages\" />
     <Folder Include="PageNavigations\" />
     <Folder Include="PlatformSpecific\" />
-    <Folder Include="HELP\" />
+    <Folder Include="Helpers\" />
     <Folder Include="StylesDemo\" />
     <Folder Include="Assets\" />
     <Folder Include="DataBindingAndMVVM\" />
@@ -37,6 +38,7 @@
     <Folder Include="Accessibility\" />
     <Folder Include="MSALDemo\" />
     <Folder Include="EssentialsDemo\" />
+    <Folder Include="Localization\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -47,6 +49,17 @@
     <None Remove="FilesDemo\Xamarin.pdf" />
     <None Remove="MSALDemo\AzureADAuthProvider.cs" />
     <None Remove="MSALDemo\GraphUserDataService.cs" />
+    <None Remove="Localization\AppResources.es" />
+    <None Remove="Localization\AppResources.Designer.cs" />
+    <None Remove="Localization\AppResources-fr.Designer.cs" />
+    <None Remove="Localization\AppResources-es.Designer.cs" />
+    <None Remove="Localization\AppResources.resx" />
+    <None Remove="Localization\AppResources-pt.resx" />
+    <None Remove="Localization\AppResources.Designer.cs" />
+    <None Remove="Localization\AppResources-es.resx" />
+    <None Remove="Localization\AppResources-fr.Designer.cs" />
+    <None Remove="Localization\AppResources-es.Designer.cs" />
+    <None Remove="Localization\AppResources-fr.resx" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />
@@ -59,6 +72,7 @@
     <EmbeddedResource Include="FilesDemo\LibJsonResource.json" />
     <EmbeddedResource Include="FilesDemo\LibXmlResource.xml" />
     <EmbeddedResource Include="FilesDemo\Xamarin.pdf" />
+    <EmbeddedResource Include="Localization\AppResources.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="CollectionView\VerticalListPage.xaml.cs" />

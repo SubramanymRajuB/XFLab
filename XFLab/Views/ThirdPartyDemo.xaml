@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Third Paty Demo"
+             x:Class="XFLab.Views.ThirdPartyDemo">
+   <StackLayout VerticalOptions="Start" BackgroundColor="White" Padding="5" Spacing="10">
+            <Button Text="Localization"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Localization_Clicked"/>
+        </StackLayout>
+</ContentPage>
