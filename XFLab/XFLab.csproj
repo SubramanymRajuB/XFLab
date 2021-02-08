@@ -19,6 +19,9 @@
     <PackageReference Include="Microsoft.Identity.Client" Version="4.3.0" />
     <PackageReference Include="Plugin.Multilingual" Version="1.0.2" />
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.7" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.10.972" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.10.972" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.10.972" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PLC\" />
@@ -41,6 +44,7 @@
     <Folder Include="EssentialsDemo\" />
     <Folder Include="Localization\" />
     <Folder Include="LottieDemo\" />
+    <Folder Include="FFImageLoadingDemo\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -62,6 +66,8 @@
     <None Remove="Localization\AppResources-fr.Designer.cs" />
     <None Remove="Localization\AppResources-es.Designer.cs" />
     <None Remove="Localization\AppResources-fr.resx" />
+    <None Remove="Images\cat.gif" />
+    <None Remove="Images\svg.svg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />
@@ -75,6 +81,8 @@
     <EmbeddedResource Include="FilesDemo\LibXmlResource.xml" />
     <EmbeddedResource Include="FilesDemo\Xamarin.pdf" />
     <EmbeddedResource Include="Localization\AppResources.Designer.cs" />
+    <EmbeddedResource Include="Images\svg.svg" />
+    <EmbeddedResource Include="Images\cat.gif" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="CollectionView\VerticalListPage.xaml.cs" />

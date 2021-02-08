@@ -10,3 +10,9 @@ ImageEntry: https://xamgirl.com/image-entry-in-xamarin-forms/
 DependencyService:https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/dependency-service/
 Styles: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/
 Localization: https://xamgirl.com/multilingual-localization-plugin-for-xamarin/
+Lottie animation: https://xamgirl.com/lottie-animations-step-by-step-in-xamarin-forms/
+https://lottiefiles.com/
+FFImageLoading: https://askxammy.com/optimizing-handling-images-with-ffimageloading/
+https://kampeki-factory.blogspot.com/2017/11/xamarin-forms-essential-ffimageloading.html
+https://github.com/luberda-molinet/FFImageLoading/wiki/Xamarin.Forms-API
+

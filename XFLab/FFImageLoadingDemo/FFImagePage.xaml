@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             Title="FFImageLoading Demo"
+             x:Class="XFLab.FFImagePage">
+    <ScrollView BackgroundColor="White">
+        <StackLayout Padding="20,0">
+            
+            <Label Text="Xamarin Forms!" TextColor="DeepPink" FontSize="40"/>
+            <Label Text="GIF" TextColor="DodgerBlue" FontSize="40" />
+
+            <ff:CachedImage x:Name="Gif" Source="resource://XFLab.Images.cat.gif" />
+
+            <Label Text="SVG" TextColor="DodgerBlue" FontSize="40"/>
+            <ffSvg:SvgCachedImage Source="resource://XFLab.Images.svg.svg"/>
+
+            <Label Text="Blurred" TextColor="DodgerBlue" FontSize="40"/>
+            <ff:CachedImage Source="resource://XFLab.Images.SeatedMonkey.jpg">
+                <ff:CachedImage.Transformations>
+                    <ffTransformations:BlurredTransformation Radius="15" />
+                </ff:CachedImage.Transformations>
+            </ff:CachedImage>
+
+            <Label Text="Rounded Transformation" TextColor="DodgerBlue" FontSize="24"/>
+            <ff:CachedImage Source="resource://XFLab.Images.SeatedMonkey.jpg">
+                <ff:CachedImage.Transformations>
+                    <ffTransformations:RoundedTransformation Radius="240" />
+                </ff:CachedImage.Transformations>
+            </ff:CachedImage>
+
+            <Label Text="Grayscale Transformation" TextColor="DodgerBlue" FontSize="24"/>
+            <ff:CachedImage Source="resource://XFLab.Images.SeatedMonkey.jpg">
+                <ff:CachedImage.Transformations>
+                    <ffTransformations:GrayscaleTransformation />
+                </ff:CachedImage.Transformations>
+            </ff:CachedImage>
+            <ff:CachedImage LoadingPlaceholder="https://miro.medium.com/max/1400/1*kW-mFsR5zjhrpmfmLRdSrQ.png"
+                            Source="https://devblogs.microsoft.com/wp-content/uploads/sites/44/2019/03/MicrosoftXamarin2.png"
+                            ErrorPlaceholder = "Error"
+                            WidthRequest = "150" HeightRequest = "150" CacheDuration = "30"
+                            RetryCount = "2"
+                            RetryDelay = "450"
+                            DownsampleToViewSize = "true"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

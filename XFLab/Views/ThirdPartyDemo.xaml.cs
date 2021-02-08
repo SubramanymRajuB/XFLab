@@ -19,5 +19,10 @@ namespace XFLab.Views
         {
             Navigation.PushAsync(new LottieAnimationPage());
         }
+
+        void FFImage_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new FFImagePage());
+        }
     }
 }

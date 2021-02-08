@@ -23,7 +23,7 @@ namespace XFLab.Droid
             ToolbarResource = Resource.Layout.Toolbar;
             App.ParentWindow = this;
             base.OnCreate(savedInstanceState);
-
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             global::Xamarin.FormsMaps.Init(this, savedInstanceState);

@@ -14,5 +14,10 @@
                     FontSize="25" BackgroundColor="#2880b9"
                     TextColor="White" BorderColor="Transparent"
                     Clicked="Lottie_Clicked"/>
+            <Button Text="FFImageLoading"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="FFImage_Clicked"/>
         </StackLayout>
 </ContentPage>
