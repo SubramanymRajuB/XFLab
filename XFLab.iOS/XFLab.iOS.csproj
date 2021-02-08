@@ -149,6 +149,9 @@
     <PackageReference Include="Plugin.Multilingual">
       <Version>1.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
+      <Version>4.0.7</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -175,5 +178,7 @@
     <BundleResource Include="Resources\favorite.png" />
     <BundleResource Include="Resources\hamburger.png" />
     <BundleResource Include="Resources\hamburger%402x.png" />
+    <BundleResource Include="Resources\onboarding_animation.json" />
+    <BundleResource Include="Resources\androidapple.json" />
   </ItemGroup>
 </Project>

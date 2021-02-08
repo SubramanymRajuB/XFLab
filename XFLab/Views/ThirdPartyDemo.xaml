@@ -9,5 +9,10 @@
                     FontSize="25" BackgroundColor="#2880b9"
                     TextColor="White" BorderColor="Transparent"
                     Clicked="Localization_Clicked"/>
+            <Button Text="Lottie Animations"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Lottie_Clicked"/>
         </StackLayout>
 </ContentPage>

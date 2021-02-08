@@ -14,5 +14,10 @@ namespace XFLab.Views
         {
             Navigation.PushAsync(new LocalizationDemo());
         }
+
+        void Lottie_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new LottieAnimationPage());
+        }
     }
 }

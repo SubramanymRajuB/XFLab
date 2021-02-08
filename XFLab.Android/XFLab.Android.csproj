@@ -68,6 +68,9 @@
     <PackageReference Include="Plugin.Multilingual">
       <Version>1.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
+      <Version>4.0.7</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -547,6 +550,8 @@
     <AndroidAsset Include="Assets\pdfjs\web\cmaps\UniCNS-UTF32-V.bcmap" />
     <AndroidAsset Include="Assets\pdfjs\build\pdf.js" />
     <AndroidAsset Include="Assets\pdfjs\build\pdf.worker.js" />
+    <AndroidAsset Include="Assets\onboarding_animation.json" />
+    <AndroidAsset Include="Assets\androidapple.json" />
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
