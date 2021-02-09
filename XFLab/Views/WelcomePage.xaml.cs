@@ -109,5 +109,9 @@ namespace XFLab.Views
             Navigation.PushAsync(new GradientsBrushesDemo());
         }
 
+        void RadioButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new RadioButtonChangesDemo());
+        }
     }
 }

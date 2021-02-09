@@ -133,6 +133,12 @@
                     BorderColor="Transparent"
                     Clicked="Brushes_Clicked"/>
 
+            <Button Text="RadioButton Changes (X.F 5.0)"
+                    HorizontalOptions="FillAndExpand" FontSize="20"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="RadioButton_Clicked"/>
+
         </StackLayout>
   </ScrollView>
 </ContentPage>

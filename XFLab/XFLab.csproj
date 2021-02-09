@@ -115,6 +115,9 @@
     <Compile Update="Views\GradientsBrushesDemo.xaml.cs">
       <DependentUpon>GradientsBrushesDemo.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\RadioButtonChangesDemo.xaml.cs">
+      <DependentUpon>RadioButtonChangesDemo.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="**/*" />

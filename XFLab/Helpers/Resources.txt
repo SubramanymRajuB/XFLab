@@ -21,6 +21,8 @@ EmbededFonts: https://devblogs.microsoft.com/xamarin/embedded-fonts-xamarin-form
 https://montemagno.com/using-font-icons-in-xamarin-forms-goodbye-images-hello-fonts/
 Visual State Manager Target
 https://devblogs.microsoft.com/xamarin/visual-state-manager/
+Gradient & Brushes: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/brushes/
+
 
 
 
