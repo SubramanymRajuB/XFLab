@@ -2,6 +2,8 @@
 using Xamarin.Forms;
 using XFLab.Views;
 
+[assembly: ExportFont("Samantha.ttf")]
+[assembly: ExportFont("FA5Regular.otf", Alias = "FontAwesome")]
 namespace XFLab
 {
     public partial class App : Application

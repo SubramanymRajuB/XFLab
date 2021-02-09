@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FormsGallery.XamlExamples.PathDemoPage"
-             Title="Path Demo">
+             Title="Path Demo (X.F 4.7)">
     <StackLayout>
         <Label Text="Path"
                FontSize="50"

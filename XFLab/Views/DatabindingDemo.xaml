@@ -124,7 +124,7 @@
                 
             </TableSection>
 
-            <TableSection Title="Multi Bindings">
+            <TableSection Title="Multi Bindings (X.F 4.7)">
 
                 <TextCell Text="String Formatting"
                           Detail="Combine strings from a MultiBinding"

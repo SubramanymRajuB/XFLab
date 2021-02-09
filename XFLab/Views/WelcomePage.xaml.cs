@@ -94,5 +94,10 @@ namespace XFLab.Views
             Navigation.PushAsync(new AccessibilityDemo());
         }
 
+        void EmbeddedFonts_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new EmbeddedFontsPage());
+        }
+
     }
 }

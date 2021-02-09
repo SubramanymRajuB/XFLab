@@ -8,7 +8,8 @@
              x:Class="XFLab.Views.WelcomePage">
     <ScrollView>
         <StackLayout VerticalOptions="Start" BackgroundColor="White" Padding="5" Spacing="10">
-            <Label Text="Xamarin.Forms Demo's" TextColor="Black" TextDecorations="Underline" FontAttributes="Bold" FontSize="30" HorizontalOptions="Center"/>
+            <Label Text="Xamarin.Forms Demo's" TextColor="Black" TextDecorations="Underline"
+                   FontAttributes="Bold" FontSize="30" HorizontalOptions="Center"/>
             <Button Text="Xaml vs Csharp"
                     HorizontalOptions="FillAndExpand"
                     FontSize="25" BackgroundColor="#2880b9"
@@ -110,6 +111,15 @@
                     BackgroundColor="#2880b9" TextColor="White"
                     BorderColor="Transparent"
                     Clicked="Accessbility_Clicked"/>
+
+            <Label Text="Xamarin.Forms New Features" TextDecorations="Underline"
+                   FontAttributes="Bold" TextColor="Red" FontSize="25" HorizontalOptions="Center"/>
+
+            <Button Text="Embedded Fonts Demo (X.F 4.5)"
+                    HorizontalOptions="FillAndExpand" FontSize="20"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="EmbeddedFonts_Clicked"/>
         </StackLayout>
   </ScrollView>
 </ContentPage>

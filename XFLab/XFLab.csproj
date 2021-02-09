@@ -47,6 +47,7 @@
     <Folder Include="LottieDemo\" />
     <Folder Include="FFImageLoadingDemo\" />
     <Folder Include="RgPopupDemo\" />
+    <Folder Include="EmbeddedFonts\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -75,6 +76,8 @@
     <None Remove="obj\Debug\netstandard2.0\XFLab.assets.cache" />
     <None Remove="obj\Debug\netstandard2.0\XFLab.assets.cache" />
     <None Remove="obj\Debug\netstandard2.0\XFLab.assets.cache" />
+    <None Remove="EmbeddedFonts\FA5Regular.otf" />
+    <None Remove="EmbeddedFonts\Samantha.ttf" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />
@@ -90,6 +93,8 @@
     <EmbeddedResource Include="Localization\AppResources.Designer.cs" />
     <EmbeddedResource Include="Images\svg.svg" />
     <EmbeddedResource Include="Images\cat.gif" />
+    <EmbeddedResource Include="EmbeddedFonts\FA5Regular.otf" />
+    <EmbeddedResource Include="EmbeddedFonts\Samantha.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="CollectionView\VerticalListPage.xaml.cs" />
