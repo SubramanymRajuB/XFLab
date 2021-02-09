@@ -15,4 +15,7 @@ https://lottiefiles.com/
 FFImageLoading: https://askxammy.com/optimizing-handling-images-with-ffimageloading/
 https://kampeki-factory.blogspot.com/2017/11/xamarin-forms-essential-ffimageloading.html
 https://github.com/luberda-molinet/FFImageLoading/wiki/Xamarin.Forms-API
+RgPopup: https://github.com/rotorgames/Rg.Plugins.Popup/wiki/Getting-started
+https://askxammy.com/how-to-work-with-advanced-pop-ups-in-xamarin-forms/
+
 

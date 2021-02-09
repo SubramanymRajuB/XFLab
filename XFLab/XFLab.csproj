@@ -22,6 +22,7 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.10.972" />
     <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.10.972" />
     <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.10.972" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.9" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="PLC\" />
@@ -45,6 +46,7 @@
     <Folder Include="Localization\" />
     <Folder Include="LottieDemo\" />
     <Folder Include="FFImageLoadingDemo\" />
+    <Folder Include="RgPopupDemo\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -68,6 +70,11 @@
     <None Remove="Localization\AppResources-fr.resx" />
     <None Remove="Images\cat.gif" />
     <None Remove="Images\svg.svg" />
+    <None Remove="obj\Debug\netstandard2.0\XFLab.assets.cache" />
+    <None Remove="obj\Debug\netstandard2.0\XFLab.assets.cache" />
+    <None Remove="obj\Debug\netstandard2.0\XFLab.assets.cache" />
+    <None Remove="obj\Debug\netstandard2.0\XFLab.assets.cache" />
+    <None Remove="obj\Debug\netstandard2.0\XFLab.assets.cache" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />

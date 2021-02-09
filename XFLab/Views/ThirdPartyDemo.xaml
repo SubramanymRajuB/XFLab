@@ -19,5 +19,10 @@
                     FontSize="25" BackgroundColor="#2880b9"
                     TextColor="White" BorderColor="Transparent"
                     Clicked="FFImage_Clicked"/>
+            <Button Text="Rg Popup"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="RG_Clicked"/>
         </StackLayout>
 </ContentPage>

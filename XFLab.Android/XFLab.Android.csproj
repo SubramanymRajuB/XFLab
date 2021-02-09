@@ -80,6 +80,9 @@
     <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms">
       <Version>2.4.10.972</Version>
     </PackageReference>
+    <PackageReference Include="Rg.Plugins.Popup">
+      <Version>2.0.0.9</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -178,6 +181,10 @@
       <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\xml\my_backup_rules.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\PopupLogo.png">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

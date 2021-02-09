@@ -24,5 +24,10 @@ namespace XFLab.Views
         {
             Navigation.PushAsync(new FFImagePage());
         }
+
+        void RG_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new RgPopupDemo());
+        }
     }
 }

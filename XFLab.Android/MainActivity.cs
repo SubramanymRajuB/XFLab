@@ -21,12 +21,16 @@ namespace XFLab.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-            App.ParentWindow = this;
             base.OnCreate(savedInstanceState);
-            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             global::Xamarin.FormsMaps.Init(this, savedInstanceState);
+            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
+            Rg.Plugins.Popup.Popup.Init(this);
+
+            App.ParentWindow = this;
+
             LoadApplication(new App());
            // CheckAppPermissions();
         }
@@ -61,6 +65,18 @@ namespace XFLab.Droid
         {
             base.OnActivityResult(requestCode, resultCode, data);
             AuthenticationContinuationHelper.SetAuthenticationContinuationEventArgs(requestCode, resultCode, data);
+        }
+
+        public override void OnBackPressed()
+        {
+            if (Rg.Plugins.Popup.Popup.SendBackPressed(base.OnBackPressed))
+            {
+                // Do something if there are some pages in the `PopupStack`
+            }
+            else
+            {
+                // Do something if there are not any pages in the `PopupStack`
+            }
         }
     }
 }
