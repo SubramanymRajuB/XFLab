@@ -127,6 +127,12 @@
                     BorderColor="Transparent"
                     Clicked="VSM_Clicked"/>
 
+            <Button Text="Gradients and Brushes Demo (X.F 4.8)"
+                    HorizontalOptions="FillAndExpand" FontSize="20"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="Brushes_Clicked"/>
+
         </StackLayout>
   </ScrollView>
 </ContentPage>

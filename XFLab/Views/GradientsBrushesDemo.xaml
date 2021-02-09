@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Gradients and Brushes Demo (X.F 4.8)"
+             x:Class="XFLab.Views.GradientsBrushesDemo">
+    <StackLayout VerticalOptions="Start" BackgroundColor="White" Padding="5" Spacing="10">
+            <Button Text="Solid color brush"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Solid_Clicked"/>
+            <Button Text="Linear gradient brush"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Linear_Clicked"/>
+            <Button Text="Radial gradient brush"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="Radial_Clicked"/>
+            <Button Text="Update brushes at runtime demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="UpdateBrush_Clicked"/>
+        </StackLayout>
+</ContentPage>

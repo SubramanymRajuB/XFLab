@@ -104,5 +104,10 @@ namespace XFLab.Views
             Navigation.PushAsync(new VSMTargetDemo ());
         }
 
+        void Brushes_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new GradientsBrushesDemo());
+        }
+
     }
 }

@@ -48,6 +48,7 @@
     <Folder Include="FFImageLoadingDemo\" />
     <Folder Include="RgPopupDemo\" />
     <Folder Include="EmbeddedFonts\" />
+    <Folder Include="BrushesDemo\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -107,6 +108,12 @@
     </Compile>
     <Compile Update="Views\AccessibilityDemo.xaml.cs">
       <DependentUpon>AccessibilityDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\VSMTargetDemo.xaml.cs">
+      <DependentUpon>VSMTargetDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\GradientsBrushesDemo.xaml.cs">
+      <DependentUpon>GradientsBrushesDemo.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
