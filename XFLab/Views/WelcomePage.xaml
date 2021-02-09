@@ -120,6 +120,13 @@
                     BackgroundColor="#2880b9" TextColor="White"
                     BorderColor="Transparent"
                     Clicked="EmbeddedFonts_Clicked"/>
+
+            <Button Text="VisualStateManager Target (X.F 4.5)"
+                    HorizontalOptions="FillAndExpand" FontSize="20"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="VSM_Clicked"/>
+
         </StackLayout>
   </ScrollView>
 </ContentPage>

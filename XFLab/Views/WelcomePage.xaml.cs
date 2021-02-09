@@ -99,5 +99,10 @@ namespace XFLab.Views
             Navigation.PushAsync(new EmbeddedFontsPage());
         }
 
+        void VSM_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new VSMTargetDemo ());
+        }
+
     }
 }

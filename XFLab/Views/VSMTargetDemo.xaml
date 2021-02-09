@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="VSM Target (X.F 4.5)"
+             x:Class="XFLab.Views.VSMTargetDemo">
+    <StackLayout x:Name="MyStackLayout" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="ColorStates">
+                <VisualState x:Name="Normal" />
+                <VisualState x:Name="Invalid">
+                    <VisualState.Setters>
+                        <Setter Property="BackgroundColor" Value="Yellow"/>
+                        <Setter TargetName="WelcomeLabel" Property="Label.TextColor" Value="Red"/>
+                        <Setter TargetName="ToggleValidButton" Property="Button.TextColor" Value="Red"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Label x:Name="WelcomeLabel" Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Start" HorizontalOptions="Start" />
+
+        <Label x:Name="CurrentState"></Label>
+
+        <Button x:Name="ToggleValidButton" Text="Toggle State" Clicked="ToggleValid_OnClicked"/>
+    </StackLayout>
+</ContentPage>
