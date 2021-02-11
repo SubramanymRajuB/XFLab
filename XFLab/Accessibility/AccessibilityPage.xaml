@@ -22,7 +22,7 @@
                 <Entry BackgroundColor="White" Placeholder="Enter name here" AutomationProperties.IsInAccessibleTree="true" AutomationProperties.LabeledBy="{x:Reference label}" />
             </StackLayout>
             <Label TextColor="Black" Text="Tap image to hear the alert box." AutomationProperties.IsInAccessibleTree="False" AutomationProperties.Name="Image Label" />
-            <Image Source="monkey.jpg" AutomationProperties.IsInAccessibleTree="true" AutomationProperties.Name="Monkey Image" AutomationProperties.HelpText="Tap to show an alert">
+            <Image Source="xamarinstore.jpg" AutomationProperties.IsInAccessibleTree="true" AutomationProperties.Name="Monkey Image" AutomationProperties.HelpText="Tap to show an alert">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnImageTapped" />
                 </Image.GestureRecognizers>
