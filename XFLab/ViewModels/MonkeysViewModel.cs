@@ -5,13 +5,13 @@ namespace DataBindingDemos
 {
     public class MonkeysViewModel
     {
-        public IList<Monkey> Monkeys { get; private set; }
+        public IList<Animal> Monkeys { get; private set; }
 
         public MonkeysViewModel()
         {
-            Monkeys = new List<Monkey>();
+            Monkeys = new List<Animal>();
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Baboon",
                 Location = "Africa & Asia",
@@ -20,14 +20,14 @@ namespace DataBindingDemos
                 IsMischievous = false
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Seated Monkey",
                 Details = "This monkey is laid back and relaxed, and likes to watch the world go by. It doesn't make a lot of noise, often smiles mysteriously, and sleeps sitting up.",
                 IsMischievous = false
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Capuchin Monkey",
                 Location = "Central & South America",
@@ -35,7 +35,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Capuchin_Costa_Rica.jpg/200px-Capuchin_Costa_Rica.jpg"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Blue Monkey",
                 Location = "Central and East Africa",
@@ -44,7 +44,7 @@ namespace DataBindingDemos
                 IsMischievous = false                    
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Squirrel Monkey",
                 Location = "Central & South America",
@@ -53,14 +53,14 @@ namespace DataBindingDemos
                 IsMischievous = true
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Face-Palm Monkey",
                 Details = "This monkey reacts appropriately to ridiculous assertions and actions. It's cynical but not unfriendly, has seven varities of grimaces, and doesn't laugh at your jokes.",
                 IsMischievous = true
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Golden Lion Tamarin",
                 Location = "Brazil",
@@ -68,7 +68,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Golden_lion_tamarin_portrait3.jpg/220px-Golden_lion_tamarin_portrait3.jpg"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Howler Monkey",
                 Location = "South America",
@@ -76,7 +76,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Alouatta_guariba.jpg/200px-Alouatta_guariba.jpg"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Japanese Macaque",
                 Location = "Japan",
@@ -85,7 +85,7 @@ namespace DataBindingDemos
                 IsMischievous = true
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Mandrill",
                 Location = "Southern Cameroon, Gabon, Equatorial Guinea, and Congo",
@@ -94,7 +94,7 @@ namespace DataBindingDemos
                 IsMischievous = false
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Proboscis Monkey",
                 Location = "Borneo",
@@ -102,7 +102,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Borneo.jpg/250px-Proboscis_Monkey_in_Borneo.jpg"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Red-shanked Douc",
                 Location = "Vietnam, Laos",
@@ -110,7 +110,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Portrait_of_a_Douc.jpg/159px-Portrait_of_a_Douc.jpg"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Gray-shanked Douc",
                 Location = "Vietnam",
@@ -118,7 +118,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cuc.Phuong.Primate.Rehab.center.jpg/320px-Cuc.Phuong.Primate.Rehab.center.jpg"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Golden Snub-nosed Monkey",
                 Location = "China",
@@ -126,7 +126,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Golden_Snub-nosed_Monkeys%2C_Qinling_Mountains_-_China.jpg/165px-Golden_Snub-nosed_Monkeys%2C_Qinling_Mountains_-_China.jpg"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Black Snub-nosed Monkey",
                 Location = "China",
@@ -134,7 +134,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/RhinopitecusBieti.jpg/320px-RhinopitecusBieti.jpg"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Tonkin Snub-nosed Monkey",
                 Location = "Vietnam",
@@ -142,7 +142,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Tonkin_snub-nosed_monkeys_%28Rhinopithecus_avunculus%29.jpg/320px-Tonkin_snub-nosed_monkeys_%28Rhinopithecus_avunculus%29.jpg"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Thomas's Langur",
                 Location = "Indonesia",
@@ -151,7 +151,7 @@ namespace DataBindingDemos
                 IsMischievous = false
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Purple-faced Langur",
                 Location = "Sri Lanka",
@@ -159,7 +159,7 @@ namespace DataBindingDemos
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Semnopithèque_blanchâtre_mâle.JPG/192px-Semnopithèque_blanchâtre_mâle.JPG"
             });
 
-            Monkeys.Add(new Monkey
+            Monkeys.Add(new Animal
             {
                 Name = "Gelada",
                 Location = "Ethiopia",

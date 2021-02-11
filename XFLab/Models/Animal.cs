@@ -1,6 +1,6 @@
 ﻿namespace XFLab.Models
 {
-    public class Monkey
+    public class Animal
     {
         public string Name { get; set; }
         public string Location { get; set; }

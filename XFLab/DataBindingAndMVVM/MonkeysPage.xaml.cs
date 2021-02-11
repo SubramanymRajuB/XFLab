@@ -18,7 +18,7 @@ namespace DataBindingDemos
 
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var monkey = ((ListView)sender).SelectedItem as Monkey;
+            var monkey = ((ListView)sender).SelectedItem as Animal;
             if (monkey != null)
             {
                 var page = new MonkeyDetailsPage();

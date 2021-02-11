@@ -197,5 +197,16 @@
     <BundleResource Include="Resources\dog.png" />
     <BundleResource Include="Resources\elephant.png" />
     <BundleResource Include="Resources\monkey.png" />
+    <BundleResource Include="Resources\xamarinstore.jpg" />
+    <BundleResource Include="Resources\back.png" />
+    <BundleResource Include="Resources\back%402x.png" />
+    <BundleResource Include="Resources\bear.png" />
+    <BundleResource Include="Resources\bear%402x.png" />
+    <BundleResource Include="Resources\cat%402x.png" />
+    <BundleResource Include="Resources\paw.png" />
+    <BundleResource Include="Resources\paw%402x.png" />
+    <BundleResource Include="Resources\photo.jpg" />
+    <BundleResource Include="Resources\random.png" />
+    <BundleResource Include="Resources\random%402x.png" />
   </ItemGroup>
 </Project>

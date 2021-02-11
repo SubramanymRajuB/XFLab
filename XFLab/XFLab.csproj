@@ -49,6 +49,7 @@
     <Folder Include="RgPopupDemo\" />
     <Folder Include="EmbeddedFonts\" />
     <Folder Include="BrushesDemo\" />
+    <Folder Include="ShellDemo\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -79,6 +80,7 @@
     <None Remove="obj\Debug\netstandard2.0\XFLab.assets.cache" />
     <None Remove="EmbeddedFonts\FA5Regular.otf" />
     <None Remove="EmbeddedFonts\Samantha.ttf" />
+    <None Remove="Images\xamarinstore.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />
@@ -96,6 +98,7 @@
     <EmbeddedResource Include="Images\cat.gif" />
     <EmbeddedResource Include="EmbeddedFonts\FA5Regular.otf" />
     <EmbeddedResource Include="EmbeddedFonts\Samantha.ttf" />
+    <EmbeddedResource Include="Images\xamarinstore.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="CollectionView\VerticalListPage.xaml.cs" />

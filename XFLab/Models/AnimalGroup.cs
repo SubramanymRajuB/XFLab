@@ -2,11 +2,11 @@
 
 namespace XFLab.Models
 {
-    public class AnimalGroup : List<Monkey>
+    public class AnimalGroup : List<Animal>
     {
         public string Name { get; private set; }
 
-        public AnimalGroup(string name, List<Monkey> animals) : base(animals)
+        public AnimalGroup(string name, List<Animal> animals) : base(animals)
         {
             Name = name;
         }

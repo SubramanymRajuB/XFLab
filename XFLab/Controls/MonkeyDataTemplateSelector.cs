@@ -10,7 +10,7 @@ namespace XFLab.Controls
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            return ((Monkey)item).Location.Contains("America") ? AmericanMonkey : OtherMonkey;
+            return ((Animal)item).Location.Contains("America") ? AmericanMonkey : OtherMonkey;
         }
     }
 }

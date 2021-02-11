@@ -11,14 +11,14 @@ namespace XFLab.ViewModels
 {
     public class CollectionViewModel : INotifyPropertyChanged
     {
-        readonly IList<Monkey> source;
-        Monkey selectedMonkey;
+        readonly IList<Animal> source;
+        Animal selectedMonkey;
         int selectionCount = 1;
 
-        public ObservableCollection<Monkey> Monkeys { get; private set; }
-        public IList<Monkey> EmptyMonkeys { get; private set; }
+        public ObservableCollection<Animal> Monkeys { get; private set; }
+        public IList<Animal> EmptyMonkeys { get; private set; }
 
-        public Monkey SelectedMonkey
+        public Animal SelectedMonkey
         {
             get
             {
@@ -51,14 +51,14 @@ namespace XFLab.ViewModels
 
         public string SelectedMonkeyMessage { get; private set; }
 
-        public ICommand DeleteCommand => new Command<Monkey>(RemoveMonkey);
-        public ICommand FavoriteCommand => new Command<Monkey>(FavoriteMonkey);
+        public ICommand DeleteCommand => new Command<Animal>(RemoveMonkey);
+        public ICommand FavoriteCommand => new Command<Animal>(FavoriteMonkey);
         public ICommand FilterCommand => new Command<string>(FilterItems);
         public ICommand MonkeySelectionChangedCommand => new Command(MonkeySelectionChanged);
 
         public CollectionViewModel()
         {
-            source = new List<Monkey>();
+            source = new List<Animal>();
             CreateMonkeyCollection();
 
             selectedMonkey = Monkeys.Skip(3).FirstOrDefault();
@@ -72,7 +72,7 @@ namespace XFLab.ViewModels
 
         void CreateMonkeyCollection()
         {
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Baboon",
                 Location = "Africa & Asia",
@@ -80,7 +80,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Capuchin Monkey",
                 Location = "Central & South America",
@@ -88,7 +88,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Capuchin_Costa_Rica.jpg/200px-Capuchin_Costa_Rica.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Blue Monkey",
                 Location = "Central and East Africa",
@@ -96,7 +96,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/BlueMonkey.jpg/220px-BlueMonkey.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Squirrel Monkey",
                 Location = "Central & South America",
@@ -104,7 +104,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Saimiri_sciureus-1_Luc_Viatour.jpg/220px-Saimiri_sciureus-1_Luc_Viatour.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Golden Lion Tamarin",
                 Location = "Brazil",
@@ -112,7 +112,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Golden_lion_tamarin_portrait3.jpg/220px-Golden_lion_tamarin_portrait3.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Howler Monkey",
                 Location = "South America",
@@ -120,7 +120,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Alouatta_guariba.jpg/200px-Alouatta_guariba.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Japanese Macaque",
                 Location = "Japan",
@@ -128,7 +128,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Macaca_fuscata_fuscata1.jpg/220px-Macaca_fuscata_fuscata1.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Mandrill",
                 Location = "Southern Cameroon, Gabon, Equatorial Guinea, and Congo",
@@ -136,7 +136,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Mandrill_at_san_francisco_zoo.jpg/220px-Mandrill_at_san_francisco_zoo.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Proboscis Monkey",
                 Location = "Borneo",
@@ -144,7 +144,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Borneo.jpg/250px-Proboscis_Monkey_in_Borneo.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Red-shanked Douc",
                 Location = "Vietnam, Laos",
@@ -152,7 +152,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Portrait_of_a_Douc.jpg/159px-Portrait_of_a_Douc.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Gray-shanked Douc",
                 Location = "Vietnam",
@@ -160,7 +160,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cuc.Phuong.Primate.Rehab.center.jpg/320px-Cuc.Phuong.Primate.Rehab.center.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Golden Snub-nosed Monkey",
                 Location = "China",
@@ -168,7 +168,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Golden_Snub-nosed_Monkeys%2C_Qinling_Mountains_-_China.jpg/165px-Golden_Snub-nosed_Monkeys%2C_Qinling_Mountains_-_China.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Black Snub-nosed Monkey",
                 Location = "China",
@@ -176,7 +176,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/RhinopitecusBieti.jpg/320px-RhinopitecusBieti.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Tonkin Snub-nosed Monkey",
                 Location = "Vietnam",
@@ -184,7 +184,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Tonkin_snub-nosed_monkeys_%28Rhinopithecus_avunculus%29.jpg/320px-Tonkin_snub-nosed_monkeys_%28Rhinopithecus_avunculus%29.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Thomas's Langur",
                 Location = "Indonesia",
@@ -192,7 +192,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Thomas%27s_langur_Presbytis_thomasi.jpg/142px-Thomas%27s_langur_Presbytis_thomasi.jpg"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Purple-faced Langur",
                 Location = "Sri Lanka",
@@ -200,7 +200,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Semnopithèque_blanchâtre_mâle.JPG/192px-Semnopithèque_blanchâtre_mâle.JPG"
             });
 
-            source.Add(new Monkey
+            source.Add(new Animal
             {
                 Name = "Gelada",
                 Location = "Ethiopia",
@@ -208,7 +208,7 @@ namespace XFLab.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Gelada-Pavian.jpg/320px-Gelada-Pavian.jpg"
             });
 
-            Monkeys = new ObservableCollection<Monkey>(source);
+            Monkeys = new ObservableCollection<Animal>(source);
         }
 
         void FilterItems(string filter)
@@ -237,7 +237,7 @@ namespace XFLab.ViewModels
             selectionCount++;
         }
 
-        void RemoveMonkey(Monkey monkey)
+        void RemoveMonkey(Animal monkey)
         {
             if (Monkeys.Contains(monkey))
             {
@@ -245,7 +245,7 @@ namespace XFLab.ViewModels
             }
         }
 
-        void FavoriteMonkey(Monkey monkey)
+        void FavoriteMonkey(Animal monkey)
         {
             monkey.IsFavorite = !monkey.IsFavorite;
         }

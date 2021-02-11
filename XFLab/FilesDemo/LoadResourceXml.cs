@@ -15,11 +15,11 @@ namespace XFLab
 			var assembly = typeof(LoadResourceJson).GetTypeInfo().Assembly;
 			Stream stream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{"FilesDemo.LibXmlResource.xml"}");
 
-			List<Monkey> monkeys;
+			List<Animal> monkeys;
 			using (var reader = new StreamReader (stream)) 
             {
-				var serializer = new XmlSerializer(typeof(List<Monkey>));
-                monkeys = (List<Monkey>)serializer.Deserialize(reader);
+				var serializer = new XmlSerializer(typeof(List<Animal>));
+                monkeys = (List<Animal>)serializer.Deserialize(reader);
 			}
 			#endregion
 

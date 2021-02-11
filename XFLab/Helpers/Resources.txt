@@ -22,7 +22,9 @@ https://montemagno.com/using-font-icons-in-xamarin-forms-goodbye-images-hello-fo
 Visual State Manager Target
 https://devblogs.microsoft.com/xamarin/visual-state-manager/
 Gradient & Brushes: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/brushes/
-
+RadioButton changes (X.F 5.0): https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/radiobutton#redefine-radiobutton-appearance
+https://www.codemag.com/article/2010082?utm_source=twitter&utm_medium=social-owned&utm_campaign=sm-articles
+Shell: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/
 
 
 

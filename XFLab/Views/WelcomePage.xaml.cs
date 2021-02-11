@@ -113,5 +113,10 @@ namespace XFLab.Views
         {
             Navigation.PushAsync(new RadioButtonChangesDemo());
         }
+
+        void ShellButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new AppShell());
+        }
     }
 }

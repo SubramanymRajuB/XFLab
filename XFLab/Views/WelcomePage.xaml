@@ -139,6 +139,12 @@
                     BorderColor="Transparent"
                     Clicked="RadioButton_Clicked"/>
 
+            <Button Text="Shell features (X.F 5.0)"
+                    HorizontalOptions="FillAndExpand" FontSize="20"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="ShellButton_Clicked"/>
+
         </StackLayout>
   </ScrollView>
 </ContentPage>
