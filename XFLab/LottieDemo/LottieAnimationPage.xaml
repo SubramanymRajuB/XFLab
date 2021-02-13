@@ -5,7 +5,8 @@
              Title="Lottie Animation"
              BackgroundColor="White"
              x:Class="XFLab.LottieAnimationPage">
-    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand">
               <lottie:AnimationView 
                 x:Name="AnimationView" 
                 Animation="onboarding_animation.json" 

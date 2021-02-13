@@ -4,6 +4,7 @@
              x:Class="FormsGallery.XamlExamples.PolygonDemoPage"
              Title="Polygon Demo">
     <StackLayout>
+        <!--100 100, 0 200, 200 200 traingle shape-->
         <Label Text="Polygon"
                FontSize="50"
                FontAttributes="Bold"

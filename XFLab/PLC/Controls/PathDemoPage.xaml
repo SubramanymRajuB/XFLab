@@ -8,6 +8,8 @@
                FontSize="50"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
+        <Label HorizontalOptions="Center" Text="Create a Path with path markup syntax"
+               FontAttributes="Bold"/>
         <Path Stroke="Black"
               Aspect="Uniform"
               HorizontalOptions="Center"
@@ -21,5 +23,58 @@
                     L11.9,14.2 0,14.2 0,3.3Z
                     M32,0
                     L32,14.2 13.9,14.2 13.9,1.8Z" />
+        <Path Stroke="Black"
+              Fill="Red"
+              Aspect="Uniform"
+              HorizontalOptions="Center"
+              HeightRequest="100"
+              WidthRequest="100"
+              Data="M10,100 L100, 100, 50 50z" />
+        <Label HorizontalOptions="Center" Text="Create a Path with Geometry objects"
+               FontAttributes="Bold"/>
+        <Path Stroke="Black"
+      Aspect="Uniform"
+      HorizontalOptions="Center">
+    <Path.Data>
+        <PathGeometry>
+            <PathGeometry.Figures>
+                <PathFigureCollection>
+                    <PathFigure IsClosed="True"
+                                StartPoint="10,100">
+                        <PathFigure.Segments>
+                            <PathSegmentCollection>
+                                <LineSegment Point="100,100" />
+                                <LineSegment Point="100,50" />
+                                <LineSegment Point="10,50" />
+                            </PathSegmentCollection>
+                        </PathFigure.Segments>
+                    </PathFigure>
+                </PathFigureCollection>
+            </PathGeometry.Figures>
+        </PathGeometry>
+    </Path.Data>
+</Path>
+
+        <Path Stroke="Black"
+      Fill="#CCCCFF"
+      Aspect="Uniform"
+      HorizontalOptions="Center">
+    <Path.Data>
+        <GeometryGroup FillRule="Nonzero">
+            <EllipseGeometry RadiusX="50"
+                             RadiusY="50"
+                             Center="75,75" />
+            <EllipseGeometry RadiusX="70"
+                             RadiusY="70"
+                             Center="75,75" />
+            <EllipseGeometry RadiusX="100"
+                             RadiusY="100"
+                             Center="75,75" />
+            <EllipseGeometry RadiusX="120"
+                             RadiusY="120"
+                             Center="75,75" />
+        </GeometryGroup>
+    </Path.Data>
+</Path>
        </StackLayout>
 </ContentPage>

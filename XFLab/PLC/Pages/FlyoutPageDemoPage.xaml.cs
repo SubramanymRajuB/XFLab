@@ -16,6 +16,15 @@ namespace FormsGallery.XamlExamples
         {
             // Show the detail page.
             IsPresented = false;
+
+
+            //var item = e.SelectedItem as FlyoutPageItem;
+            //if (item != null)
+            //{
+            //    Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+            //    flyoutPage.listView.SelectedItem = null;
+            //    IsPresented = false;
+            //}
         }
     }
 }
