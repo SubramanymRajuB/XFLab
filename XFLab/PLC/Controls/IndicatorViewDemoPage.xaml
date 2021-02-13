@@ -9,7 +9,7 @@
                FontSize="50"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
-        <CarouselView ItemsSource="{Binding Monkeys}"
+        <CarouselView BackgroundColor="White" ItemsSource="{Binding Monkeys}"
                       IndicatorView="indicatorView">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
