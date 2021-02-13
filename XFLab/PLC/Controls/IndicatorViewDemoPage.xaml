@@ -9,7 +9,7 @@
                FontSize="50"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
-        <CarouselView BackgroundColor="White" ItemsSource="{Binding Monkeys}"
+        <CarouselView BackgroundColor="White" Loop="False" ItemsSource="{Binding Monkeys}"
                       IndicatorView="indicatorView">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
@@ -52,7 +52,16 @@
                        Margin="0,0,0,40"
                        BackgroundColor="White"
                        IndicatorColor="LightGray"
+                       IndicatorsShape="Square"
+                       MaximumVisible="17"
+                       IndicatorSize="10"
                        SelectedIndicatorColor="DarkGray"
-                       HorizontalOptions="Center" />
+                       HorizontalOptions="Center" >
+            <!--<IndicatorView.IndicatorTemplate>
+                <DataTemplate>
+                    <Image Source="{FontImage &#xf30c;, FontFamily={OnPlatform iOS=Ionicons, Android=ionicons.ttf#}, Size=12}" />
+                </DataTemplate>
+            </IndicatorView.IndicatorTemplate>-->
+        </IndicatorView>
     </StackLayout>
 </ContentPage>
