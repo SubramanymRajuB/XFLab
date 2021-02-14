@@ -18,6 +18,7 @@ https://github.com/luberda-molinet/FFImageLoading/wiki/Xamarin.Forms-API
 RgPopup: https://github.com/rotorgames/Rg.Plugins.Popup/wiki/Getting-started
 https://askxammy.com/how-to-work-with-advanced-pop-ups-in-xamarin-forms/
 EmbededFonts: https://devblogs.microsoft.com/xamarin/embedded-fonts-xamarin-forms/
+https://andreinitescu.github.io/IconFont2Code/
 https://montemagno.com/using-font-icons-in-xamarin-forms-goodbye-images-hello-fonts/
 Visual State Manager Target
 https://devblogs.microsoft.com/xamarin/visual-state-manager/

@@ -4,6 +4,7 @@ using XFLab.Views;
 
 [assembly: ExportFont("Samantha.ttf")]
 [assembly: ExportFont("FA5Regular.otf", Alias = "FontAwesome")]
+[assembly: ExportFont("fa-solid-900.ttf", Alias = "FA-S")]
 namespace XFLab
 {
     public partial class App : Application

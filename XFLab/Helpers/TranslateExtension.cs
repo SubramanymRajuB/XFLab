@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Reflection;
 using System.Resources;
 using Plugin.Multilingual;
@@ -8,7 +7,7 @@ using Xamarin.Forms.Xaml;
 
 namespace XFLab.Helpers
 {
-	[ContentProperty("Text")]
+    [ContentProperty("Text")]
     public class TranslateExtension : IMarkupExtension
     {
         const string ResourceId = "XFLab.Localization.AppResources";

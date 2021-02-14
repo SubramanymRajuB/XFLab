@@ -50,6 +50,7 @@
     <Folder Include="EmbeddedFonts\" />
     <Folder Include="BrushesDemo\" />
     <Folder Include="ShellDemo\" />
+    <Folder Include="MarkupExtensions\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\Banana.jpg" />
@@ -81,6 +82,7 @@
     <None Remove="EmbeddedFonts\FA5Regular.otf" />
     <None Remove="EmbeddedFonts\Samantha.ttf" />
     <None Remove="Images\xamarinstore.jpg" />
+    <None Remove="EmbeddedFonts\fa-solid-900.ttf" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />
@@ -99,6 +101,7 @@
     <EmbeddedResource Include="EmbeddedFonts\FA5Regular.otf" />
     <EmbeddedResource Include="EmbeddedFonts\Samantha.ttf" />
     <EmbeddedResource Include="Images\xamarinstore.jpg" />
+    <EmbeddedResource Include="EmbeddedFonts\fa-solid-900.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="CollectionView\VerticalListPage.xaml.cs" />
