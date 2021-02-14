@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:markupDemo="clr-namespace:XFLab"
+             Title="Markup Extensions"
+             x:Class="XFLab.Views.MarkupExtensionDemo">
+    <ScrollView>
+    <StackLayout VerticalOptions="Start" BackgroundColor="White" Padding="5" Spacing="10">
+            <Button Text="x:Static Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:StaticDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="x:Reference Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:ReferenceDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="x:Type Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:TypeDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="x:Array Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:ArrayDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="x:Null Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:NullDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="OnPlatform Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:OnPlatformDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="OnIdiom Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:OnIdiomDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="FontImage Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:FontImageDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="HSL Color Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:HslColorDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="AppThemeBinding Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:AppThemeBindingDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+            <Button Text="Image Resource Demo"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    CommandParameter="{x:Type markupDemo:ImageResourceDemoPage}"
+                    Command="{Binding NavigateCommand}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

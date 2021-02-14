@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace ListAndCollectionViewDemos
+namespace XFLab.Models
 {
     public class VeggieModel
     {

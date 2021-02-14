@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using Xamarin.Forms;
+using XFLab.Models;
 
-namespace ListAndCollectionViewDemos
+namespace XFLab
 {
-    public static class Constants
+    public static class AppConstants
     {
         public static List<VeggieModel> Veggies = new List<VeggieModel>
         {
@@ -11,5 +13,8 @@ namespace ListAndCollectionViewDemos
             new VeggieModel() { Name = "Romaine Lettuce", Comment = "good in salads", IsAVeggie = true, Image = "lettuce.png" },
             new VeggieModel() { Name = "Zucchini", Comment = "grows relatively easily", IsAVeggie = true, Image = "zucchini.png" }
         };
+
+        public static double NormalFontSize = 18;
+        public static string Idiom = Device.Idiom.ToString();
     }
 }

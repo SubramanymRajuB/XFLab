@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using XFLab;
 
 namespace ListAndCollectionViewDemos
 {
@@ -7,7 +8,7 @@ namespace ListAndCollectionViewDemos
         public BuiltInCell()
         {
             InitializeComponent();
-            listView.ItemsSource = Constants.Veggies;
+            listView.ItemsSource = AppConstants.Veggies;
         }
     }
 }

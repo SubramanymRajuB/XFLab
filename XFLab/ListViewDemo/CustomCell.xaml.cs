@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using Xamarin.Forms;
+using XFLab.Models;
 
 namespace ListAndCollectionViewDemos
 {
