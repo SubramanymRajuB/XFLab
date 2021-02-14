@@ -2,20 +2,59 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FormsGallery.XamlExamples.ContentViewDemoPage"
+             xmlns:appTemplate="clr-namespace:XFLab.Controls"
              Title="ContentView Demo">
-    <StackLayout>
-        <Label Text="ContentView"
-               FontSize="50"
-               FontAttributes="Bold"
-               HorizontalOptions="Center" />
+        <ContentPage.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="changesContentView">
+                <Grid BackgroundColor="AliceBlue">
+                    <Label VerticalOptions="Center" TextColor="{TemplateBinding BackgroundColor}"
+                           Text="{TemplateBinding PageTitle}"
+                           HorizontalOptions="Center" FontSize="25"
+                          FontAttributes="Bold" />
+                </Grid>
+            </ControlTemplate>
 
-        <ContentView BackgroundColor="Aqua"
-                     Margin="10"
-                     Padding="25"
-                     HorizontalOptions="Fill"
-                     VerticalOptions="CenterAndExpand">
-            <Label Text=
-"The ContentView (colored aqua in this
+             <ControlTemplate x:Key="ReuseContentView">
+                <Grid BackgroundColor="AliceBlue">
+                    <appTemplate:ContentViewTemplate PageTitle="Login page">   
+                        <appTemplate:ContentViewTemplate.Body>
+                            <StackLayout>
+                                <Entry Placeholder="email" />
+                                <Entry Placeholder="password" />
+                            </StackLayout>
+                        </appTemplate:ContentViewTemplate.Body>
+                        <appTemplate:ContentViewTemplate.Footer>
+                            <StackLayout Orientation="Horizontal">
+                                <Button Text="Cancel" BackgroundColor="Yellow" HorizontalOptions="FillAndExpand" />
+                                <Button BackgroundColor="#ABcABc" Text="Login" HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </appTemplate:ContentViewTemplate.Footer>
+                    </appTemplate:ContentViewTemplate>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+     </ContentPage.Resources>
+    <!--<appTemplate:ContentViewTemplate PageTitle="Login page"
+                   BackgroundColor="Red" ControlTemplate="{StaticResource changesContentView}">   
+        <appTemplate:ContentViewTemplate.Body>
+            <StackLayout>
+                <Entry Placeholder="email" />
+                <Entry Placeholder="password" />
+            </StackLayout>
+        </appTemplate:ContentViewTemplate.Body>
+        <appTemplate:ContentViewTemplate.Footer>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cancel" BackgroundColor="Yellow" HorizontalOptions="FillAndExpand" />
+                <Button BackgroundColor="#ABcABc" Text="Login" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </appTemplate:ContentViewTemplate.Footer>
+    </appTemplate:ContentViewTemplate>-->
+    <StackLayout>
+        <ContentView ControlTemplate="{StaticResource ReuseContentView}" BackgroundColor="Red"/>
+           <ContentView BackgroundColor="Aqua" Margin="10" Padding="25"
+                     HorizontalOptions="Fill" VerticalOptions="CenterAndExpand">
+            <Label Text= "The ContentView (colored aqua in this
 example) might not seem very useful
 because it can have a single child
 (in this example a Label) and doesn't
@@ -25,5 +64,7 @@ color or giving a little margin to its
 child through its own Padding property."
                    TextColor="Purple" />
         </ContentView>
-    </StackLayout>
+
+     </StackLayout>
+
 </ContentPage>
