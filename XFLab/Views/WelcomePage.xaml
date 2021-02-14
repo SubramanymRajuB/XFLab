@@ -22,6 +22,12 @@
                     TextColor="White" BorderColor="Transparent"
                     Clicked="MarkupExtensions_Clicked"/>
 
+            <Button Text="Design Time Data"
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="25" BackgroundColor="#2880b9"
+                    TextColor="White" BorderColor="Transparent"
+                    Clicked="DesignTime_Clicked"/>
+
             <Button Text="PLC (Pages, Layouts, Controls)"
                     HorizontalOptions="FillAndExpand" FontSize="25"
                     BackgroundColor="#2880b9" TextColor="White"

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Design Time Data"
+             xmlns:models="clr-namespace:XFLab.Models"
+             BackgroundColor="White"
+             x:Class="XFLab.Views.DesignTimeDataDemo">
+    <StackLayout BackgroundColor="White" VerticalOptions="Center"
+                 HorizontalOptions="Center" >
+      <Label Text="{Binding Name}" d:Text="Name!" />
+      <d:Button Padding="2" BackgroundColor="Red" Text="Design Time Button" />
+      <Image Source="{Binding ProfilePicture}" d:Source="dog.png" />
+    <ListView ItemsSource="{Binding Items}">
+        <d:ListView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>Item One</x:String>
+                <x:String>Item Two</x:String>
+                <x:String>Item Three</x:String>
+            </x:Array>
+        </d:ListView.ItemsSource>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding .}"
+                          d:Text="{Binding .}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    <ListView ItemsSource="{Binding Animals}">
+        <d:ListView.ItemsSource>
+            <x:Array Type="{x:Type models:Animal}">
+                <models:Animal Name="Baboon" Location="Africa and Asia"/>
+                <models:Animal Name="Capuchin Monkey" Location="Central and South America"/>
+                <models:Animal Name="Blue Monkey" Location="Central and East Africa"/>
+            </x:Array>
+        </d:ListView.ItemsSource>
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="models:Animal">
+                <TextCell Text="{Binding Name}"
+                          Detail="{Binding Location}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+    </StackLayout>
+</ContentPage>

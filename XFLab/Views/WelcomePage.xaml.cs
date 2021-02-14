@@ -19,6 +19,11 @@ namespace XFLab.Views
             Navigation.PushAsync(new MarkupExtensionDemo());
         }
 
+        void DesignTime_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new DesignTimeDataDemo());
+        }
+
         void PLCDemo_Clicked(System.Object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new PLCPage());
