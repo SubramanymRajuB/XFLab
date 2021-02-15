@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:XFLab.Views"
             xmlns:local="clr-namespace:FormsGallery"
             x:Class="FormsGallery.XamlExamples.TabbedPageDemoPage"
             SelectedTabColor="Red"
@@ -55,4 +56,17 @@
             </ContentPage>
         </DataTemplate>
     </TabbedPage.ItemTemplate>
+    <!--<ContentPage Title="SimplePage">
+        <StackLayout>
+            <Button BackgroundColor="#2880b9" Text="Navigate" TextColor="White"
+                    Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage>
+    <views:LoginPage />
+	<NavigationPage BarBackgroundColor="Red" Title="PassData" IconImageSource="favorite.png">
+		<x:Arguments>
+			<views:PassDataPageOne />
+		</x:Arguments>
+	</NavigationPage>
+	<views:SignUpPage />-->
 </TabbedPage>
