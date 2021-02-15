@@ -4,14 +4,17 @@
             xmlns:local="clr-namespace:FormsGallery"
             x:Class="FormsGallery.XamlExamples.TabbedPageDemoPage"
             SelectedTabColor="Red"
+            UnselectedTabColor="White"
+            BarTextColor="White"
+            BarBackgroundColor="#2880b9"
             Title="TabbedPage Demo">
 
     <TabbedPage.ItemsSource>
         <x:Array Type="{x:Type local:NamedColor}">
             <local:NamedColor Name="Red" Color="Red" Image="favorite.png" />
-            <local:NamedColor Name="Green" Color="Green" />
-            <local:NamedColor Name="Blue" Color="Blue" />
-            <local:NamedColor Name="Yellow" Color="Yellow" />
+            <local:NamedColor Name="Green" Color="Green" Image="favorite.png" />
+            <local:NamedColor Name="Blue" Color="Blue" Image="favorite.png" />
+            <local:NamedColor Name="Yellow" Color="Yellow" Image="favorite.png" />
         </x:Array>
     </TabbedPage.ItemsSource>
 

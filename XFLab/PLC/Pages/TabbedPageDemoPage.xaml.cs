@@ -8,6 +8,8 @@ namespace FormsGallery.XamlExamples
         public TabbedPageDemoPage()
         {
             InitializeComponent();
+
+            CurrentPage = this.Children[2]; //Default selection for third tab
         }
     }
 }
