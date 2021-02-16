@@ -8,12 +8,16 @@
              xmlns:models="clr-namespace:XFLab.Models"
              BackgroundColor="White"
              x:Class="XFLab.Views.DesignTimeDataDemo">
+
     <StackLayout BackgroundColor="White" VerticalOptions="Center"
                  HorizontalOptions="Center" >
-      <Label Text="{Binding Name}" d:Text="Name!" />
+      <Label Text="{Binding Name}" d:Text="Namet!" />
+
       <d:Button Padding="2" BackgroundColor="Red" Text="Design Time Button" />
-      <Image Source="{Binding ProfilePicture}" d:Source="dog.png" />
-    <ListView ItemsSource="{Binding Items}">
+
+        <Image Source="{Binding ProfilePicture}" d:Source="dog.png" />
+
+        <ListView ItemsSource="{Binding Items}">
         <d:ListView.ItemsSource>
             <x:Array Type="{x:Type x:String}">
                 <x:String>Item One</x:String>
@@ -28,7 +32,8 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-    <ListView ItemsSource="{Binding Animals}">
+
+        <ListView ItemsSource="{Binding Animals}">
         <d:ListView.ItemsSource>
             <x:Array Type="{x:Type models:Animal}">
                 <models:Animal Name="Baboon" Location="Africa and Asia"/>

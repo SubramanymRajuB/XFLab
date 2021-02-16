@@ -26,6 +26,8 @@ Gradient & Brushes: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-
 RadioButton changes (X.F 5.0): https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/radiobutton#redefine-radiobutton-appearance
 https://www.codemag.com/article/2010082?utm_source=twitter&utm_medium=social-owned&utm_campaign=sm-articles
 Shell: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/
+TabbedPage: https://xamgirl.com/extending-tabbedpage-in-xamarin-forms/
+https://montemagno.com/xamarin-forms-official-bottom-navigation-bottom-tabs-on-android/
 
 
 

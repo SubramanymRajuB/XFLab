@@ -8,8 +8,10 @@
             UnselectedTabColor="White"
             BarTextColor="White"
             BarBackgroundColor="#2880b9"
-            Title="TabbedPage Demo">
-
+            Title="TabbedPage Demo"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+    <!--android:TabbedPage.ToolbarPlacement="Bottom"-->
     <TabbedPage.ItemsSource>
         <x:Array Type="{x:Type local:NamedColor}">
             <local:NamedColor Name="Red" Color="Red" Image="favorite.png" />
