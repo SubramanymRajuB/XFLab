@@ -8,9 +8,9 @@
     <StackLayout Margin="10, 0">
         
         <Label Text="{Binding Source={x:Reference page},
-                              StringFormat='The type of this page is {0}'}"
+                              StringFormat='{0}'}"
                FontSize="18"
-               VerticalOptions="CenterAndExpand"
+               VerticalOptions="Start"
                HorizontalTextAlignment="Center" />
 
         <Slider x:Name="slider"
@@ -22,7 +22,13 @@
                Rotation="{Binding Value}"
                FontSize="24"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+               VerticalOptions="Start" />
+
+
+        <Picker x:Name="picker" BackgroundColor="Red" Margin="10"/>
         
+        <Label BindingContext="{x:Reference picker}" IsVisible="{Binding SelectedItem,co}"
+               Text="{Binding SelectedItem}"/>
+
     </StackLayout>
 </ContentPage>

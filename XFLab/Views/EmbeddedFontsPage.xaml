@@ -9,7 +9,7 @@
         <!--https://andreinitescu.github.io/IconFont2Code/ Use this to generate font to code
         https://montemagno.com/xamarin-forms-custom-fonts-everywhere/
         -->
-        <Label Text="&#xf584;" FontFamily="FontAwesome" FontSize="50" HorizontalTextAlignment="Center" />
+        <Label Text="&#xf247;" FontFamily="FontAwesome" FontSize="50" HorizontalTextAlignment="Center" />
         <Label Text="&#xf0f4;" FontFamily="FA-S" FontSize="50" HorizontalTextAlignment="Center" />
     </StackLayout>
 </ContentPage>

@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="XFLab.FontImageDemoPage"
+             IconImageSource="{FontImage &#xf584;, FontFamily=FontAwesome,  Size=44}"
              Title="FontImage Demo">
     <StackLayout Margin="20,35,20,20">
         <Image BackgroundColor="#D1D1D1"
-               Source="{FontImage &#xf584;, FontFamily=FontAwesome, Size=44}" />
+               Source="{FontImage &#xf584;, Color=Red, FontFamily=FontAwesome,  Size=44}" />
     </StackLayout>
 </ContentPage>

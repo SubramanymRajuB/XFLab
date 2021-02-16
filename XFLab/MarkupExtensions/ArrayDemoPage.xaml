@@ -36,4 +36,22 @@
         </ListView.ItemTemplate>
                 
     </ListView>
+
+     <!--<ListView Margin="10">
+        <ListView.ItemsSource>
+            <x:Array Type="{x:Type local:Animal}">
+                <local:Animal Name="Moneky"/> 
+                <local:Animal Name="Tiger"/>
+            </x:Array>
+        </ListView.ItemsSource>
+            
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Label Text="{Binding Name}"
+                             Margin="3" />    
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+         </ListView>-->
 </ContentPage>        

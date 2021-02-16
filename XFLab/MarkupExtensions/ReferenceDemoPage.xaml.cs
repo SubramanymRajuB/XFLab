@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System.Collections.Generic;
+using Xamarin.Forms;
 
 namespace XFLab
 {
@@ -7,6 +8,10 @@ namespace XFLab
         public ReferenceDemoPage()
         {
             InitializeComponent();
+            List<string> items = new List<string>();
+            items.Add("Blue");
+            items.Add("Red");
+            picker.ItemsSource = items;
         }
     }
 }

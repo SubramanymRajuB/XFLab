@@ -7,6 +7,7 @@
         <ResourceDictionary>
             <Style TargetType="Label">
                 <Setter Property="FontSize" Value="48" />
+                <Setter Property="Margin" Value="0,24,0,0" />
                 <Setter Property="FontFamily">
                     <Setter.Value>
                         <OnPlatform x:TypeArguments="x:String">
@@ -27,7 +28,6 @@
 
             <Label Text="Text 3"
                    FontFamily="{x:Null}" />
-
             <Label Text="Text 4" />
             <Label Text="Text 5" />
         </StackLayout>
