@@ -121,5 +121,8 @@
                        FontAttributes="Bold" />
             </Grid>
         </DataTemplate>
+       <Style TargetType="Button">
+            <Setter Property="TextTransform" Value="None"/>
+        </Style>
 	</Application.Resources>
 </Application>

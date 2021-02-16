@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FormsGallery.XamlExamples.ScrollViewDemoPage"
+             xmlns:local="clr-namespace:DataBindingDemos"
              Title="ScrollView Demo">
     <StackLayout>
         <Label Text="ScrollView"
@@ -9,10 +10,11 @@
                FontAttributes="Bold"
                HorizontalOptions="Center" />
 
-        <ScrollView VerticalOptions="FillAndExpand"
+        <ScrollView x:Name="scrollView" Orientation="Vertical" VerticalScrollBarVisibility="Never"
+    Scrolled="OnScrollViewScrolled" VerticalOptions="FillAndExpand"
                     Margin="10">
-
-        <Label Text=
+            <StackLayout>
+        <Label x:Name="label" Text=
 "Sometimes page content fits entirely on
 the page. That's very convenient. But
 on many occasions, the content of the page
@@ -38,6 +40,27 @@ a ScrollView just to be sure your stuff doesn't
 go running off the bottom of the screen."
 
                 FontSize="Large" />
+            <Button x:Name="btn" Text="Reset Scroll" BackgroundColor="Red" Clicked="btn_Clicked" TextColor="White"/>
+                </StackLayout>
         </ScrollView>
+
     </StackLayout>
+
+    <!--<ScrollView x:Name="scrollView" Orientation="Both" VerticalScrollBarVisibility="Never" Scrolled="OnScrollViewScrolled">
+        <StackLayout BindableLayout.ItemsSource="{x:Static local:NamedColor.All}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <BoxView Color="{Binding Color}"
+                                 HeightRequest="32"
+                                 WidthRequest="32"
+                                 VerticalOptions="Center" />
+                        <Label Text="{Binding FriendlyName}"
+                               FontSize="24"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ScrollView>-->
 </ContentPage>
