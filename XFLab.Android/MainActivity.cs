@@ -29,6 +29,11 @@ namespace XFLab.Droid
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             Rg.Plugins.Popup.Popup.Init(this);
 
+            //Minimum Android 9.0 compilation
+            Window.Attributes.LayoutInDisplayCutoutMode = LayoutInDisplayCutoutMode.ShortEdges;
+            Window.AddFlags(WindowManagerFlags.Fullscreen);
+            //Window.AddFlags(WindowManagerFlags.LayoutInOverscan);
+
             App.ParentWindow = this;
 
             LoadApplication(new App());
