@@ -14,6 +14,7 @@ namespace FormsGallery.XamlExamples
 
         async void OnButtonClicked(object sender, EventArgs e)
         {
+            //await Navigation.PopAsync(new LabelDemoPage());
             Button btn = (Button)sender;
             string id = btn.StyleId;
 

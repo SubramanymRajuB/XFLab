@@ -78,6 +78,8 @@
                     <Label Text="{Binding Color.Saturation, StringFormat='Saturation = {0:F2}'}" />
                     <Label Text="{Binding Color.Luminosity, StringFormat='Luminosity = {0:F2}'}" />
                 </StackLayout>
+
+                <Button x:Name="btnTest" Text="GoNextPage"/>
             </StackLayout>
         </ContentPage>
             </x:Arguments>

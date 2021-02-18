@@ -19,5 +19,6 @@ the Universal Windows Platform."
                FontSize="Large"
                VerticalOptions="CenterAndExpand"
                Margin="10, 0" />
+        <Button Text="GoBack" Clicked="Button_Clicked"/>
     </StackLayout>
 </ContentPage>

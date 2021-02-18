@@ -9,5 +9,11 @@ namespace FormsGallery.XamlExamples
         {
             InitializeComponent();
         }
+
+        async void Button_Clicked(object sender, System.EventArgs e)
+        {
+            MessagingCenter.Send<object, int>(this, "LABEL_DEMO", 2);
+            await Navigation.PopAsync();
+        }
     }
 }

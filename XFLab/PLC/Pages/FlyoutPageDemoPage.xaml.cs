@@ -9,7 +9,21 @@ namespace FormsGallery.XamlExamples
         {
             InitializeComponent();
 
+            MessagingCenter.Subscribe<object, int>(this, "LABEL_DEMO", async (sender, arg) =>
+            {
+                if (arg==2)
+                {
+                    listView.SelectedItem = (listView.ItemsSource as IList)?[arg];
+                }
+            });
+
             listView.SelectedItem = (listView.ItemsSource as IList)?[0];
+            btnTest.Clicked += BtnTest_Clicked;
+        }
+
+        async void BtnTest_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new LabelDemoPage());
         }
 
         void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
