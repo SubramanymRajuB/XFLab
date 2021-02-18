@@ -30,9 +30,12 @@ namespace XFLab.Droid
             Rg.Plugins.Popup.Popup.Init(this);
 
             //Minimum Android 9.0 compilation
-            Window.Attributes.LayoutInDisplayCutoutMode = LayoutInDisplayCutoutMode.ShortEdges;
-            Window.AddFlags(WindowManagerFlags.Fullscreen);
-            //Window.AddFlags(WindowManagerFlags.LayoutInOverscan);
+            if (Android.OS.Build.VERSION.SdkInt >= Android.OS.BuildVersionCodes.P)
+            {
+                Window.Attributes.LayoutInDisplayCutoutMode = LayoutInDisplayCutoutMode.ShortEdges;
+                Window.AddFlags(WindowManagerFlags.Fullscreen);
+                //Window.AddFlags(WindowManagerFlags.LayoutInOverscan);
+            }
 
             App.ParentWindow = this;
 

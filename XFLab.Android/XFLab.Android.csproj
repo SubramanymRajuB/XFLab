@@ -97,6 +97,7 @@
     <Compile Include="PlatformSpecific\LocalFileProvider.cs" />
     <Compile Include="PlatformSpecific\PdfWebViewRenderer.cs" />
     <Compile Include="PlatformSpecific\CustomEditorRenderer.cs" />
+    <Compile Include="PlatformSpecific\FlyoutRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

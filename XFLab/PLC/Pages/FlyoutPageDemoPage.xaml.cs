@@ -17,13 +17,29 @@ namespace FormsGallery.XamlExamples
                 }
             });
 
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                //IsPresentedChanged += (s, e) =>
+                //{
+                //    if (IsPresented) return;
+
+                //    IsGestureEnabled = true;
+                //    IsGestureEnabled = false;
+                //};
+            }
+            else
+            {
+                IsGestureEnabled = false;
+            }
+
             listView.SelectedItem = (listView.ItemsSource as IList)?[0];
             btnTest.Clicked += BtnTest_Clicked;
         }
 
         async void BtnTest_Clicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new LabelDemoPage());
+            IsGestureEnabled = !IsGestureEnabled;
+            //await Navigation.PushAsync(new LabelDemoPage());
         }
 
         void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
