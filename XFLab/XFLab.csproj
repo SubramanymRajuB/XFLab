@@ -83,6 +83,7 @@
     <None Remove="EmbeddedFonts\Samantha.ttf" />
     <None Remove="Images\xamarinstore.jpg" />
     <None Remove="EmbeddedFonts\fa-solid-900.ttf" />
+    <None Remove="Controls\CustomWebView.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />

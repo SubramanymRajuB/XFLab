@@ -1,12 +1,14 @@
-﻿using Android.Content;
+﻿using System.ComponentModel;
+using Android.Content;
 using Android.Views;
 using Android.Webkit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using XFLab.Controls;
 using XFLab.Droid.Renderers;
 using XFWebView = Xamarin.Forms.WebView;
 
-[assembly: ExportRenderer(typeof(XFWebView), typeof(CustomWebviewRenderer))]
+[assembly: ExportRenderer(typeof(CustomWebView), typeof(CustomWebviewRenderer))]
 namespace XFLab.Droid.Renderers
 {
     public class CustomWebviewRenderer : WebViewRenderer
@@ -19,32 +21,54 @@ namespace XFLab.Droid.Renderers
         protected override void OnElementChanged(ElementChangedEventArgs<XFWebView> e)
         {
             base.OnElementChanged(e);
-            if (Control != null)
+            if (Control != null && e.NewElement != null)
             {
-                bool scrollEnabled = false;
-                Control.VerticalScrollBarEnabled = scrollEnabled;
-                Control.HorizontalScrollBarEnabled = scrollEnabled;
-                Control.SetWebViewClient(new CustomWebViewClient(Element));
-                Control.Touch += (senderr, touch) =>
-                {
-                    if (!scrollEnabled)
-                    {
-                        touch.Handled = touch.Event.Action == MotionEventActions.Move;
-                    }
-                    else
-                    {
-                        touch.Handled = false;
-                    }
-                };
+                var element = Element as CustomWebView;
+                Control.SetWebViewClient(new CustomWebViewClient(element));
             }
+        }
+
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (Element != null && Control != null)
+            {
+                var element = Element as CustomWebView;
+                if (element.ExpectedHieght > 0 && element.HeightRequest >= element.ExpectedHieght)
+                {
+                    element.HeightRequest = element.ExpectedHieght;
+
+                    DisableScroll(true);
+                }
+                else
+                {
+                    DisableScroll(false);
+                }
+            }
+        }
+
+        void DisableScroll(bool scrollEnabled)
+        {
+            Control.VerticalScrollBarEnabled = scrollEnabled;
+            Control.HorizontalScrollBarEnabled = scrollEnabled;
+            Control.Touch += (senderr, touch) =>
+            {
+                if (!scrollEnabled)
+                {
+                    touch.Handled = touch.Event.Action == MotionEventActions.Move;
+                }
+                else
+                {
+                    touch.Handled = false;
+                }
+            };
         }
     }
 
     public class CustomWebViewClient : WebViewClient
     {
-        XFWebView _webView;
+        CustomWebView _webView;
 
-        public CustomWebViewClient(XFWebView webView)
+        public CustomWebViewClient(CustomWebView webView)
         {
             _webView = webView;
         }
@@ -58,6 +82,7 @@ namespace XFLab.Droid.Renderers
                     await System.Threading.Tasks.Task.Delay(100);
                 _webView.HeightRequest = view.ContentHeight;
             }
+            _webView?.InvokeCompleted();
             base.OnPageFinished(view, url);
         }
     }

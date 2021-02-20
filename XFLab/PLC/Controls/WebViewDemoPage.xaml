@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FormsGallery.XamlExamples.WebViewDemoPage"
+             xmlns:controls="clr-namespace:XFLab.Controls"
              Title="WebView Demo">
     <!--<StackLayout>
         <Label Text="WebView"
@@ -17,11 +18,16 @@
     ]]>
         </Label>-->
 
-    <ScrollView BackgroundColor="White" >
-    <StackLayout x:Name="parent" VerticalOptions="EndAndExpand">
-        <WebView Grid.Row="0" HeightRequest="{Binding Source={x:Reference parent},Path=HeightRequest}" x:Name="webView" />
-        <Button  Grid.Row="1" Text="Submit" TextColor="Black" BackgroundColor="Red"
-                FontAttributes="Bold" VerticalOptions="End"/>
-    </StackLayout>
-</ScrollView>
+    <Grid x:Name="parent" BackgroundColor="White">
+        <StackLayout Spacing="10" HorizontalOptions="FillAndExpand">
+            <controls:CustomWebView x:Name="webView" HorizontalOptions="FillAndExpand" />
+            <Button IsVisible="False" x:Name="OriginalBtn" Text="Original Submit"
+                    TextColor="Black" BackgroundColor="Red"
+                    FontAttributes="Bold"/>
+         </StackLayout>
+        <Button IsVisible="False" x:Name="dummyBtn" Text="Dummy Submit" HeightRequest="60"
+                VerticalOptions="End" TextColor="Black" BackgroundColor="Yellow"
+                FontAttributes="Bold"/>
+    
+     </Grid>
 </ContentPage>

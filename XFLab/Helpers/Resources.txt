@@ -28,6 +28,8 @@ https://www.codemag.com/article/2010082?utm_source=twitter&utm_medium=social-own
 Shell: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/shell/
 TabbedPage: https://xamgirl.com/extending-tabbedpage-in-xamarin-forms/
 https://montemagno.com/xamarin-forms-official-bottom-navigation-bottom-tabs-on-android/
+WebViewDemo: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/webview?tabs=macos
+https://lukealderton.com/blog/posts/2016/may/autocustom-height-on-xamarin-forms-webview-for-android-and-ios/
 
 
 
