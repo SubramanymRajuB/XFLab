@@ -81,6 +81,7 @@
     <Compile Include="PlatformSpecific\MyWebViewRenderer.cs" />
     <Compile Include="PlatformSpecific\CustomDatePicker.cs" />
     <Compile Include="PlatformSpecific\BaseUrl_iOS.cs" />
+    <Compile Include="PlatformSpecific\CustomWebviewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

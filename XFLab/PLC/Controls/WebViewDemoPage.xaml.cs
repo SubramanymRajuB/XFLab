@@ -12,7 +12,6 @@ namespace FormsGallery.XamlExamples
 
             //Assigning html string or local html content
             var htmlSource = new HtmlWebViewSource();
-
             htmlSource.Html = @"<html>
                                 <head>
                                 <link rel=""stylesheet"" href=""default.css"">
@@ -20,7 +19,14 @@ namespace FormsGallery.XamlExamples
                                 <body>
                                 <h1>Xamarin.Forms</h1>
                                 <p>The CSS and image are loaded from local files!</p>
-                                <img src='XamarinLogo.png'/>
+                                <img src='xamarinstore.jpg'/>
+<img src='XamarinLogo.png'/>
+<img src='XamarinLogo.png'/>
+<img src='XamarinLogo.png'/>
+<img src='XamarinLogo.png'/>
+<img src='XamarinLogo.png'/>
+<img src='XamarinLogo.png'/>
+<img src='XamarinLogo.png'/>
                                 <p><a href=""local.html"">next page</a></p>
                                 </body>
                                 </html>";

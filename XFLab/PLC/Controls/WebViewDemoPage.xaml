@@ -3,13 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FormsGallery.XamlExamples.WebViewDemoPage"
              Title="WebView Demo">
-    <StackLayout>
+    <!--<StackLayout>
         <Label Text="WebView"
                FontSize="50"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
-        <!--Source="https://www.xamarin.com"-->
-        <WebView x:Name="webView"
-                 VerticalOptions="FillAndExpand" />
+        <WebView x:Name="webView" Source="https://www.xamarin.com" />
+    </StackLayout>-->
+    
+        <!--<Label x:Name="lbl" Grid.Row="0" TextColor="Black" TextType="Html">
+             <![CDATA[
+    This is <strong style="color:red">HTML</strong> text.
+    ]]>
+        </Label>-->
+
+    <ScrollView BackgroundColor="White" >
+    <StackLayout x:Name="parent" VerticalOptions="EndAndExpand">
+        <WebView Grid.Row="0" HeightRequest="{Binding Source={x:Reference parent},Path=HeightRequest}" x:Name="webView" />
+        <Button  Grid.Row="1" Text="Submit" TextColor="Black" BackgroundColor="Red"
+                FontAttributes="Bold" VerticalOptions="End"/>
     </StackLayout>
+</ScrollView>
 </ContentPage>
