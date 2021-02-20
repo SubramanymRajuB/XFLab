@@ -98,6 +98,7 @@
     <Compile Include="PlatformSpecific\PdfWebViewRenderer.cs" />
     <Compile Include="PlatformSpecific\CustomEditorRenderer.cs" />
     <Compile Include="PlatformSpecific\FlyoutRenderer.cs" />
+    <Compile Include="PlatformSpecific\BaseUrl_Android.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -613,6 +614,9 @@
     <AndroidAsset Include="Assets\pdfjs\build\pdf.worker.js" />
     <AndroidAsset Include="Assets\onboarding_animation.json" />
     <AndroidAsset Include="Assets\androidapple.json" />
+    <AndroidAsset Include="Assets\default.css" />
+    <AndroidAsset Include="Assets\local.html" />
+    <AndroidAsset Include="Assets\XamarinLogo.png" />
   </ItemGroup>
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

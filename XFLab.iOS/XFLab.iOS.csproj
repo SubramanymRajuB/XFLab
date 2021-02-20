@@ -80,6 +80,7 @@
     <Compile Include="PlatformSpecific\LocalFileProvider.cs" />
     <Compile Include="PlatformSpecific\MyWebViewRenderer.cs" />
     <Compile Include="PlatformSpecific\CustomDatePicker.cs" />
+    <Compile Include="PlatformSpecific\BaseUrl_iOS.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -208,5 +209,7 @@
     <BundleResource Include="Resources\photo.jpg" />
     <BundleResource Include="Resources\random.png" />
     <BundleResource Include="Resources\random%402x.png" />
+    <BundleResource Include="Resources\local.html" />
+    <BundleResource Include="Resources\default.css" />
   </ItemGroup>
 </Project>

@@ -8,8 +8,8 @@
                FontSize="50"
                FontAttributes="Bold"
                HorizontalOptions="Center" />
-
-        <WebView Source="https://www.xamarin.com"
+        <!--Source="https://www.xamarin.com"-->
+        <WebView x:Name="webView"
                  VerticalOptions="FillAndExpand" />
     </StackLayout>
 </ContentPage>
