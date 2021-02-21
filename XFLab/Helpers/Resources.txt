@@ -30,6 +30,8 @@ TabbedPage: https://xamgirl.com/extending-tabbedpage-in-xamarin-forms/
 https://montemagno.com/xamarin-forms-official-bottom-navigation-bottom-tabs-on-android/
 WebViewDemo: https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/webview?tabs=macos
 https://lukealderton.com/blog/posts/2016/may/autocustom-height-on-xamarin-forms-webview-for-android-and-ios/
+DatePicker Demo: http://venkyxamarin.blogspot.com/2018/04/datepicker-placeholder-border-style.html
+https://xamgirl.com/clearable-datepicker-in-xamarin-forms/
 
 
 

@@ -79,7 +79,7 @@
     <Compile Include="PlatformSpecific\LabelShadowEffect.cs" />
     <Compile Include="PlatformSpecific\LocalFileProvider.cs" />
     <Compile Include="PlatformSpecific\MyWebViewRenderer.cs" />
-    <Compile Include="PlatformSpecific\CustomDatePicker.cs" />
+    <Compile Include="PlatformSpecific\CustomDatePickerRenderer.cs" />
     <Compile Include="PlatformSpecific\BaseUrl_iOS.cs" />
     <Compile Include="PlatformSpecific\CustomWebviewRenderer.cs" />
   </ItemGroup>

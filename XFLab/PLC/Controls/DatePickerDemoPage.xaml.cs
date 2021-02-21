@@ -8,6 +8,18 @@ namespace FormsGallery.XamlExamples
         public DatePickerDemoPage()
         {
             InitializeComponent();
+            BindingContext = this;
+        }
+
+
+        DateTime? _selectedDate = null;
+        public DateTime? SelectedDate
+        {
+            get => _selectedDate;
+            set
+            {
+                _selectedDate = value;
+            }
         }
     }
 }
