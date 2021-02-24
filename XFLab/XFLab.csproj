@@ -11,8 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1874" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.1874" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
@@ -84,6 +84,7 @@
     <None Remove="Images\xamarinstore.jpg" />
     <None Remove="EmbeddedFonts\fa-solid-900.ttf" />
     <None Remove="Controls\CustomWebView.cs" />
+    <None Remove="obj\Debug\netstandard2.0\fr\XFLab.resources.dll" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="CollectionView\VerticalListPage.xaml" />

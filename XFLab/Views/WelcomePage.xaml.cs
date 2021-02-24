@@ -89,6 +89,11 @@ namespace XFLab.Views
             Navigation.PushAsync(new ThirdPartyDemo());
         }
 
+        void NativeBinding_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new NativeLibraryPage());
+        }
+
         void FilesDemo_Clicked(System.Object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new FilesDemo());

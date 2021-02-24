@@ -106,6 +106,12 @@
                     BorderColor="Transparent"
                     Clicked="ThirdPartyDemo_Clicked"/>
 
+            <Button Text="Native Binding Library Demo"
+                    HorizontalOptions="FillAndExpand" FontSize="25"
+                    BackgroundColor="#2880b9" TextColor="White"
+                    BorderColor="Transparent"
+                    Clicked="NativeBinding_Clicked"/>
+
             <Button Text="Files Demo"
                     HorizontalOptions="FillAndExpand" FontSize="25"
                     BackgroundColor="#2880b9" TextColor="White"

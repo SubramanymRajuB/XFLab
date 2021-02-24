@@ -82,6 +82,11 @@
     <Compile Include="PlatformSpecific\CustomDatePickerRenderer.cs" />
     <Compile Include="PlatformSpecific\BaseUrl_iOS.cs" />
     <Compile Include="PlatformSpecific\CustomWebviewRenderer.cs" />
+    <Compile Include="PlatformSpecific\PayCardRecognizerService.cs" />
+    <Compile Include="PlatformSpecific\RecognizerViewController.cs" />
+    <Compile Include="PlatformSpecific\RecognizerViewController.designer.cs">
+      <DependentUpon>RecognizerViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
