@@ -11,6 +11,7 @@ using Android;
 using AndroidX.Core.App;
 using Android.Content;
 using Microsoft.Identity.Client;
+using XFLab.Droid.PlatformSpecific;
 
 namespace XFLab.Droid
 {
@@ -73,6 +74,7 @@ namespace XFLab.Droid
         {
             base.OnActivityResult(requestCode, resultCode, data);
             AuthenticationContinuationHelper.SetAuthenticationContinuationEventArgs(requestCode, resultCode, data);
+            PayCardRecognizerService.OnActivityResult(requestCode, resultCode, data);
         }
 
         public override void OnBackPressed()

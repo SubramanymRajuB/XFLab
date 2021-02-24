@@ -101,6 +101,7 @@
     <Compile Include="PlatformSpecific\BaseUrl_Android.cs" />
     <Compile Include="PlatformSpecific\CustomWebviewRenderer.cs" />
     <Compile Include="PlatformSpecific\CustomDatePickerRenderer.cs" />
+    <Compile Include="PlatformSpecific\PayCardRecognizerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -244,6 +245,10 @@
     <ProjectReference Include="..\XFLab\XFLab.csproj">
       <Project>{45D4B8CB-1244-406C-ADF6-8A0C728E6FCB}</Project>
       <Name>XFLab</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PayCardRecognizer.Android\PayCardRecognizer.Android.csproj">
+      <Project>{E1EEF411-4389-41FC-B7BC-A170C65AADC2}</Project>
+      <Name>PayCardRecognizer.Android</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
