@@ -33,6 +33,7 @@ namespace XFLab.Models
                 }
                 catch (Exception ex)
                 {
+                    Microsoft.AppCenter.Crashes.Crashes.TrackError(ex);
                     MessagingCenter.Send<PermissionItem, Exception>(this, nameof(PermissionException), ex);
                 }
             });
@@ -47,6 +48,7 @@ namespace XFLab.Models
                 }
                 catch (Exception ex)
                 {
+                    Microsoft.AppCenter.Crashes.Crashes.TrackError(ex);
                     MessagingCenter.Send<PermissionItem, Exception>(this, nameof(PermissionException), ex);
                 }
             });
@@ -61,6 +63,7 @@ namespace XFLab.Models
                 }
                 catch (Exception ex)
                 {
+                    Microsoft.AppCenter.Crashes.Crashes.TrackError(ex);
                     MessagingCenter.Send<PermissionItem, Exception>(this, nameof(PermissionException), ex);
                 }
             });

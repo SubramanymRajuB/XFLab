@@ -1,9 +1,12 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
+using XFLab.Models;
 
 namespace XFLab.Views
 {
     public partial class WelcomePage : ContentPage
     {
+        DateTime StartTimeLog;
         public WelcomePage()
         {
             InitializeComponent();
@@ -11,37 +14,52 @@ namespace XFLab.Views
 
         void XamlCsharpDemo_Clicked(System.Object sender, System.EventArgs e)
         {
+            StartTimeLog = DateTime.Now;
             Navigation.PushAsync(new XamlCsharp());
+            LogAppAnalytics.Capture(StartTimeLog, "XamlCsharpDemo");
+
         }
 
         void MarkupExtensions_Clicked(System.Object sender, System.EventArgs e)
         {
+            StartTimeLog = DateTime.Now;
             Navigation.PushAsync(new MarkupExtensionDemo());
+            LogAppAnalytics.Capture(StartTimeLog, "MarkupExtensionDemo");
         }
 
         void DesignTime_Clicked(System.Object sender, System.EventArgs e)
         {
+            StartTimeLog = DateTime.Now;
             Navigation.PushAsync(new DesignTimeDataDemo());
+            LogAppAnalytics.Capture(StartTimeLog, "DesignTimeDataDemo");
         }
 
         void PLCDemo_Clicked(System.Object sender, System.EventArgs e)
         {
+            StartTimeLog = DateTime.Now;
             Navigation.PushAsync(new PLCPage());
+            LogAppAnalytics.Capture(StartTimeLog, "PLCPage");
         }
 
         void PassingData_Clicked(System.Object sender, System.EventArgs e)
         {
+            StartTimeLog = DateTime.Now;
             Navigation.PushAsync(new PassDataPageOne());
+            LogAppAnalytics.Capture(StartTimeLog, "PassDataPageOne");
         }
 
         void CustomRendererDemo_Clicked(System.Object sender, System.EventArgs e)
         {
+            StartTimeLog = DateTime.Now;
             Navigation.PushAsync(new EntryRendererPage());
+            LogAppAnalytics.Capture(StartTimeLog, "EntryRendererPage");
         }
 
         void DependencyServiceDemo_Clicked(System.Object sender, System.EventArgs e)
         {
+            StartTimeLog = DateTime.Now;
             Navigation.PushAsync(new DPPage());
+            LogAppAnalytics.Capture(StartTimeLog, "DPPage");
         }
 
         void StylesDemo_Clicked(System.Object sender, System.EventArgs e)

@@ -15,11 +15,11 @@ namespace XFLab
 			var assembly = typeof(LoadResourceJson).GetTypeInfo().Assembly;
 			Stream stream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{"FilesDemo.LibXmlResource.xml"}");
 
-			List<Animal> monkeys;
+			List<Monkey> monkeys;
 			using (var reader = new StreamReader (stream)) 
             {
-				var serializer = new XmlSerializer(typeof(List<Animal>));
-                monkeys = (List<Animal>)serializer.Deserialize(reader);
+				var serializer = new XmlSerializer(typeof(List<Monkey>));
+                monkeys = (List<Monkey>)serializer.Deserialize(reader);
 			}
 			#endregion
 
@@ -52,6 +52,21 @@ namespace XFLab
 			//foreach (var res in assembly.GetManifestResourceNames()) 
 			//	System.Diagnostics.Debug.WriteLine("found resource: " + res);
 		}
+	}
+
+	public class Monkey
+	{
+		public string Name { get; set; }
+		public string Location { get; set; }
+		public string Details { get; set; }
+		public string ImageUrl { get; set; }
+		public bool? IsMischievous { get; set; }
+		public bool IsFavorite { get; set; }
+
+		//public override string ToString()
+		//{
+		//    return Name;
+		//}
 	}
 }
 

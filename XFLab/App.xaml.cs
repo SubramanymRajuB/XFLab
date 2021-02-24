@@ -1,4 +1,7 @@
 ﻿using DataBindingDemos;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using Xamarin.Forms;
 using XFLab.Views;
 
@@ -33,6 +36,8 @@ namespace XFLab
         //Called when the application starts.
         protected override void OnStart()
         {
+            AppCenter.Start(AppConstants.APP_ANALYTICS_ANDROID_KEY + AppConstants.APP_ANALYTICS_IOS_KEY, typeof(Analytics), typeof(Crashes));
+
         }
 
         //Called each time the application goes to the background.
