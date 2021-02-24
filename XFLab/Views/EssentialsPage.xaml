@@ -24,11 +24,7 @@
                     HorizontalOptions="FillAndExpand"
                     FontSize="25" BackgroundColor="#2880b9"
                     TextColor="White" BorderColor="Transparent"
-                    Clicked="Permissions_Clicked"/><Button Text="Connectvity"
-                    HorizontalOptions="FillAndExpand"
-                    FontSize="25" BackgroundColor="#2880b9"
-                    TextColor="White" BorderColor="Transparent"
-                    Clicked="Connectvity_Clicked"/>
+                    Clicked="Permissions_Clicked"/>
             <Button Text="Phone Dialer"
                     HorizontalOptions="FillAndExpand"
                     FontSize="25" BackgroundColor="#2880b9"
