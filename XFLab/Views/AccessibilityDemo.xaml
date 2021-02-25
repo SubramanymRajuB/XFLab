@@ -16,6 +16,6 @@
                 CommandParameter="{x:Type local:AccessibilityPage}" />
         <Button Text="Tab Order"
                 Command="{Binding NavigateCommand}"
-                CommandParameter="{x:Type local:TabIndexPage}" />
+                CommandParameter="{x:Type local:AccessibilityOrder}" />
     </StackLayout>
 </ContentPage>
