@@ -11,9 +11,9 @@
     <Label Grid.Column="1" Margin="0,10,0,0"
            TextColor="Black" FontSize="25" FontAttributes="Bold"
            Text="Fruits" 
-           TabIndex="6"
+           TabIndex="2"
            HorizontalOptions="Center" />
-    <Label Grid.Row="1"
+    <!--<Label Grid.Row="1"
            TextColor="Black" HorizontalOptions="Center" 
            Text="Tomato"
            TabIndex="2" />
@@ -43,6 +43,6 @@
     <Label Grid.Row="4"
            TextColor="Black" HorizontalOptions="Center" 
            Text="Carot"
-           TabIndex="5" />
+           TabIndex="5" />-->
 </Grid>
 </ContentPage>

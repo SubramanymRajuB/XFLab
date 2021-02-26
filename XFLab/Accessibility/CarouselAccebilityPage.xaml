@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Tab Order"
+             x:Class="XFLab.Accessibility.CarouselAccebilityPage">
+    <StackLayout Margin="20" BackgroundColor="White">
+        <!--<controls:CarouselViewControl
+                 x:Name="carouselView"
+                  Margin="15,5,15,0"
+                 Orientation="Horizontal"
+                 InterPageSpacing="10"
+                 ItemsSource="{Binding Monkeys}"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"
+                 >
+                <controls:CarouselViewControl.ItemTemplate>
+		            <DataTemplate>
+			           <StackLayout>
+                            <Label TextColor="Black" HorizontalOptions="Center" Text="{Binding Name}"/>
+                                <Image AutomationProperties.Name="Test" Source="{Binding ImageUrl}" 
+                                       Aspect="AspectFill"
+                                       HeightRequest="150"
+                                       WidthRequest="150"
+                                       HorizontalOptions="Center" />
+                    </StackLayout>
+		            </DataTemplate>
+                </controls:CarouselViewControl.ItemTemplate>
+            </controls:CarouselViewControl>-->
+
+        <CarouselView IndicatorView="indicator" x:Name="caro" AutomationProperties.Name="Caro Title"  AutomationProperties.IsInAccessibleTree="True" Grid.Row="1" VerticalOptions="Start" ItemsSource="{Binding Monkeys}">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout AutomationId="{Binding Source={x:Reference caro}, Path=AutomationId}">
+                        <Frame HasShadow="True"
+                               BorderColor="DarkGray"
+                               CornerRadius="5"
+                               Margin="20"
+                               HeightRequest="300"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand">
+                            <StackLayout>
+                                <Image AutomationProperties.Name="{Binding Name}" Source="{Binding ImageUrl}" 
+                                       Aspect="AspectFill"
+                                       HeightRequest="150"
+                                       WidthRequest="150"
+                                       HorizontalOptions="Center" />
+                                <Label Text="{Binding Location}"
+                                       HorizontalOptions="Center" />
+                                <Label Text="{Binding Details}"
+                                       FontAttributes="Italic"
+                                       HorizontalOptions="Center"
+                                       MaxLines="5"
+                                       LineBreakMode="TailTruncation" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView AutomationProperties.IsInAccessibleTree="True" SelectedIndicatorColor="Gray" IndicatorColor="LightGray" x:Name="indicator"/>
+    </StackLayout>
+</ContentPage>

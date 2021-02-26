@@ -17,5 +17,8 @@
         <Button Text="Tab Order"
                 Command="{Binding NavigateCommand}"
                 CommandParameter="{x:Type local:AccessibilityOrder}" />
+        <Button Text="CarosoulAccebility"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="{x:Type local:CarouselAccebilityPage}" />
     </StackLayout>
 </ContentPage>
